@@ -9,8 +9,19 @@
 /* Begin PBXBuildFile section */
 		FA0A8C1C234C8AE300C469BC /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0A8C1B234C8AE300C469BC /* UIView+Extension.swift */; };
 		FA6D4824234CB315007E0991 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6D4823234CB315007E0991 /* PostViewController.swift */; };
+		FA7EAF9D2355F08100757B11 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7EAF9C2355F08100757B11 /* Constants.swift */; };
+		FA7EAF9F2355F09200757B11 /* GeneralHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7EAF9E2355F09200757B11 /* GeneralHelper.swift */; };
+		FA7EAFA12355F0D800757B11 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7EAFA02355F0D800757B11 /* SplashViewController.swift */; };
+		FA7EAFA32355F0EA00757B11 /* Splash.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7EAFA22355F0EA00757B11 /* Splash.storyboard */; };
+		FA7EAFA62355F15600757B11 /* Base.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7EAFA52355F15600757B11 /* Base.storyboard */; };
+		FA7EAFA92355F17100757B11 /* BaseTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7EAFA72355F17000757B11 /* BaseTabBarViewController.swift */; };
+		FA7EAFAA2355F17100757B11 /* BaseCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7EAFA82355F17000757B11 /* BaseCustomView.swift */; };
+		FA7EAFAD2355F34B00757B11 /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7EAFAC2355F34B00757B11 /* UIView+Shadow.swift */; };
+		FA7EAFB42355F3D400757B11 /* TabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7EAFB32355F3D400757B11 /* TabItem.swift */; };
+		FA7EAFB62355F3E700757B11 /* InteractivePopRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7EAFB52355F3E700757B11 /* InteractivePopRecognizer.swift */; };
+		FA7EAFB92355F3EF00757B11 /* FloatingTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7EAFB72355F3EF00757B11 /* FloatingTabbar.swift */; };
+		FA7EAFBA2355F3EF00757B11 /* FloatingTabbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7EAFB82355F3EF00757B11 /* FloatingTabbar.xib */; };
 		FA85ECC7234A5E7C00C6EBF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85ECC6234A5E7C00C6EBF4 /* AppDelegate.swift */; };
-		FA85ECC9234A5E7C00C6EBF4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85ECC8234A5E7C00C6EBF4 /* SceneDelegate.swift */; };
 		FA85ECCB234A5E7C00C6EBF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85ECCA234A5E7C00C6EBF4 /* ViewController.swift */; };
 		FA85ECCE234A5E7C00C6EBF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA85ECCC234A5E7C00C6EBF4 /* Main.storyboard */; };
 		FA85ECD0234A5E7F00C6EBF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA85ECCF234A5E7F00C6EBF4 /* Assets.xcassets */; };
@@ -22,14 +33,28 @@
 		FA85ECEA234B120000C6EBF4 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85ECE8234B120000C6EBF4 /* NotificationTableViewCell.swift */; };
 		FA85ECEB234B120000C6EBF4 /* NotificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA85ECE9234B120000C6EBF4 /* NotificationTableViewCell.xib */; };
 		FA85ECEE234B146300C6EBF4 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85ECED234B146300C6EBF4 /* NotificationViewController.swift */; };
+		FAB6C6A723519AEB00572B74 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB6C6A623519AEB00572B74 /* Feed.storyboard */; };
+		FAB6C6A923519AF200572B74 /* Notification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB6C6A823519AF200572B74 /* Notification.storyboard */; };
+		FAB6C6B323519B7E00572B74 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB6C6B223519B7E00572B74 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FA0A8C1B234C8AE300C469BC /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		FA6D4823234CB315007E0991 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		FA7EAF9C2355F08100757B11 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FA7EAF9E2355F09200757B11 /* GeneralHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralHelper.swift; sourceTree = "<group>"; };
+		FA7EAFA02355F0D800757B11 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		FA7EAFA22355F0EA00757B11 /* Splash.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Splash.storyboard; sourceTree = "<group>"; };
+		FA7EAFA52355F15600757B11 /* Base.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Base.storyboard; sourceTree = "<group>"; };
+		FA7EAFA72355F17000757B11 /* BaseTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTabBarViewController.swift; sourceTree = "<group>"; };
+		FA7EAFA82355F17000757B11 /* BaseCustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCustomView.swift; sourceTree = "<group>"; };
+		FA7EAFAC2355F34B00757B11 /* UIView+Shadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
+		FA7EAFB32355F3D400757B11 /* TabItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabItem.swift; sourceTree = "<group>"; };
+		FA7EAFB52355F3E700757B11 /* InteractivePopRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractivePopRecognizer.swift; sourceTree = "<group>"; };
+		FA7EAFB72355F3EF00757B11 /* FloatingTabbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingTabbar.swift; sourceTree = "<group>"; };
+		FA7EAFB82355F3EF00757B11 /* FloatingTabbar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FloatingTabbar.xib; sourceTree = "<group>"; };
 		FA85ECC3234A5E7C00C6EBF4 /* SoBoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoBoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA85ECC6234A5E7C00C6EBF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FA85ECC8234A5E7C00C6EBF4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FA85ECCA234A5E7C00C6EBF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FA85ECCD234A5E7C00C6EBF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA85ECCF234A5E7F00C6EBF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -42,6 +67,9 @@
 		FA85ECE8234B120000C6EBF4 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
 		FA85ECE9234B120000C6EBF4 /* NotificationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationTableViewCell.xib; sourceTree = "<group>"; };
 		FA85ECED234B146300C6EBF4 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		FAB6C6A623519AEB00572B74 /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
+		FAB6C6A823519AF200572B74 /* Notification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notification.storyboard; sourceTree = "<group>"; };
+		FAB6C6B223519B7E00572B74 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +83,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA7EAFA42355F0F100757B11 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				FA7EAFA22355F0EA00757B11 /* Splash.storyboard */,
+				FA7EAFA02355F0D800757B11 /* SplashViewController.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		FA7EAFAE2355F36400757B11 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				FA85ECDA234A621700C6EBF4 /* FeedTableViewCell.swift */,
+				FA85ECDB234A621700C6EBF4 /* FeedTableViewCell.xib */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		FA7EAFAF2355F37300757B11 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				FA7EAFB52355F3E700757B11 /* InteractivePopRecognizer.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		FA7EAFB12355F38600757B11 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				FA7EAFB72355F3EF00757B11 /* FloatingTabbar.swift */,
+				FA7EAFB82355F3EF00757B11 /* FloatingTabbar.xib */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
+		FA7EAFB22355F39400757B11 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
 		FA85ECBA234A5E7C00C6EBF4 = {
 			isa = PBXGroup;
 			children = (
@@ -74,17 +144,21 @@
 		FA85ECC5234A5E7C00C6EBF4 /* SoBoon */ = {
 			isa = PBXGroup;
 			children = (
+				FAB6C6AA23519B3A00572B74 /* Common */,
+				FA7EAF9C2355F08100757B11 /* Constants.swift */,
+				FA7EAF9E2355F09200757B11 /* GeneralHelper.swift */,
 				FA85ECC6234A5E7C00C6EBF4 /* AppDelegate.swift */,
-				FA85ECC8234A5E7C00C6EBF4 /* SceneDelegate.swift */,
-				FA85ECCA234A5E7C00C6EBF4 /* ViewController.swift */,
-				FA85ECED234B146300C6EBF4 /* NotificationViewController.swift */,
 				FA6D4823234CB315007E0991 /* PostViewController.swift */,
+				FA85ECD4234A5E7F00C6EBF4 /* Info.plist */,
+				FA7EAFA42355F0F100757B11 /* Splash */,
+				FAB6C6AF23519B5300572B74 /* Feed */,
+				FAB6C6B023519B5700572B74 /* Notifications */,
 				FA85ECEC234B144800C6EBF4 /* View */,
 				FA85ECCC234A5E7C00C6EBF4 /* Main.storyboard */,
-				FA0A8C1B234C8AE300C469BC /* UIView+Extension.swift */,
+				FAB6C6A823519AF200572B74 /* Notification.storyboard */,
+				FAB6C6B123519B7500572B74 /* Base */,
 				FA85ECCF234A5E7F00C6EBF4 /* Assets.xcassets */,
 				FA85ECD1234A5E7F00C6EBF4 /* LaunchScreen.storyboard */,
-				FA85ECD4234A5E7F00C6EBF4 /* Info.plist */,
 			);
 			path = SoBoon;
 			sourceTree = "<group>";
@@ -92,14 +166,86 @@
 		FA85ECEC234B144800C6EBF4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FAB6C6AA23519B3A00572B74 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FAB6C6AB23519B4000572B74 /* Extensions */,
+				FAB6C6AD23519B4700572B74 /* Cells */,
+				FAB6C6AC23519B4400572B74 /* Views */,
+				FAB6C6AE23519B4B00572B74 /* Models */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FAB6C6AB23519B4000572B74 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FA0A8C1B234C8AE300C469BC /* UIView+Extension.swift */,
+				FA7EAFAC2355F34B00757B11 /* UIView+Shadow.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FAB6C6AC23519B4400572B74 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FA7EAFAF2355F37300757B11 /* General */,
+				FA7EAFB12355F38600757B11 /* Tabbar */,
+				FA7EAFB22355F39400757B11 /* Feed */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FAB6C6AD23519B4700572B74 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FA7EAFAE2355F36400757B11 /* Feed */,
 				FA85ECE8234B120000C6EBF4 /* NotificationTableViewCell.swift */,
 				FA85ECE9234B120000C6EBF4 /* NotificationTableViewCell.xib */,
 				FA85ECE4234A6AD800C6EBF4 /* CategoryTableViewCell.swift */,
 				FA85ECE5234A6AD800C6EBF4 /* CategoryTableViewCell.xib */,
-				FA85ECDA234A621700C6EBF4 /* FeedTableViewCell.swift */,
-				FA85ECDB234A621700C6EBF4 /* FeedTableViewCell.xib */,
 			);
-			path = View;
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FAB6C6AE23519B4B00572B74 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA7EAFB32355F3D400757B11 /* TabItem.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FAB6C6AF23519B5300572B74 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				FAB6C6A623519AEB00572B74 /* Feed.storyboard */,
+				FA85ECCA234A5E7C00C6EBF4 /* ViewController.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		FAB6C6B023519B5700572B74 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				FA85ECED234B146300C6EBF4 /* NotificationViewController.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		FAB6C6B123519B7500572B74 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				FA7EAFA52355F15600757B11 /* Base.storyboard */,
+				FAB6C6B223519B7E00572B74 /* BaseViewController.swift */,
+				FA7EAFA82355F17000757B11 /* BaseCustomView.swift */,
+				FA7EAFA72355F17000757B11 /* BaseTabBarViewController.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,9 +307,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA85ECD3234A5E7F00C6EBF4 /* LaunchScreen.storyboard in Resources */,
+				FA7EAFBA2355F3EF00757B11 /* FloatingTabbar.xib in Resources */,
+				FAB6C6A723519AEB00572B74 /* Feed.storyboard in Resources */,
 				FA85ECDD234A621700C6EBF4 /* FeedTableViewCell.xib in Resources */,
 				FA85ECE7234A6AD800C6EBF4 /* CategoryTableViewCell.xib in Resources */,
 				FA85ECD0234A5E7F00C6EBF4 /* Assets.xcassets in Resources */,
+				FA7EAFA32355F0EA00757B11 /* Splash.storyboard in Resources */,
+				FAB6C6A923519AF200572B74 /* Notification.storyboard in Resources */,
+				FA7EAFA62355F15600757B11 /* Base.storyboard in Resources */,
 				FA85ECEB234B120000C6EBF4 /* NotificationTableViewCell.xib in Resources */,
 				FA85ECCE234A5E7C00C6EBF4 /* Main.storyboard in Resources */,
 			);
@@ -176,15 +327,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA7EAFAA2355F17100757B11 /* BaseCustomView.swift in Sources */,
+				FA7EAFAD2355F34B00757B11 /* UIView+Shadow.swift in Sources */,
 				FA6D4824234CB315007E0991 /* PostViewController.swift in Sources */,
+				FA7EAFB92355F3EF00757B11 /* FloatingTabbar.swift in Sources */,
 				FA85ECEA234B120000C6EBF4 /* NotificationTableViewCell.swift in Sources */,
 				FA85ECCB234A5E7C00C6EBF4 /* ViewController.swift in Sources */,
+				FA7EAFA12355F0D800757B11 /* SplashViewController.swift in Sources */,
 				FA0A8C1C234C8AE300C469BC /* UIView+Extension.swift in Sources */,
 				FA85ECEE234B146300C6EBF4 /* NotificationViewController.swift in Sources */,
+				FA7EAF9D2355F08100757B11 /* Constants.swift in Sources */,
+				FAB6C6B323519B7E00572B74 /* BaseViewController.swift in Sources */,
 				FA85ECDC234A621700C6EBF4 /* FeedTableViewCell.swift in Sources */,
+				FA7EAFA92355F17100757B11 /* BaseTabBarViewController.swift in Sources */,
 				FA85ECC7234A5E7C00C6EBF4 /* AppDelegate.swift in Sources */,
-				FA85ECC9234A5E7C00C6EBF4 /* SceneDelegate.swift in Sources */,
 				FA85ECE6234A6AD800C6EBF4 /* CategoryTableViewCell.swift in Sources */,
+				FA7EAFB62355F3E700757B11 /* InteractivePopRecognizer.swift in Sources */,
+				FA7EAFB42355F3D400757B11 /* TabItem.swift in Sources */,
+				FA7EAF9F2355F09200757B11 /* GeneralHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

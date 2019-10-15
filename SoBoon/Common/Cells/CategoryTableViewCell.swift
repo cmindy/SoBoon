@@ -1,5 +1,5 @@
 //
-//  NotificationTableViewCell.swift
+//  CategoryTableViewCell.swift
 //  SoBoon
 //
 //  Created by CHOMINJI on 07/10/2019.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class NotificationTableViewCell: UITableViewCell {
-
+class CategoryTableViewCell: UITableViewCell {
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -20,5 +20,4 @@ class NotificationTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
 }

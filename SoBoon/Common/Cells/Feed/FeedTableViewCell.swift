@@ -12,7 +12,7 @@ class FeedTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        // Initialization scode
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

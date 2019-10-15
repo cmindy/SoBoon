@@ -16,6 +16,13 @@
                 <rect key="frame" x="0.0" y="0.0" width="406" height="102"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xaN-MY-DDN" userLabel="BaseView">
+                        <rect key="frame" x="0.0" y="0.0" width="406" height="102"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="102" id="bxJ-TV-Bax"/>
+                        </constraints>
+                    </view>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="hij-83-O8q">
                         <rect key="frame" x="8" y="21" width="61" height="60.5"/>
                         <constraints>
@@ -48,9 +55,13 @@
                 </subviews>
                 <constraints>
                     <constraint firstItem="hij-83-O8q" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="1RD-7h-lfN"/>
+                    <constraint firstItem="xaN-MY-DDN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="60b-wI-K5L"/>
                     <constraint firstItem="hij-83-O8q" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.6" id="EDo-UL-QYJ"/>
                     <constraint firstItem="CyK-0f-fl0" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="HA9-IQ-jkh" secondAttribute="trailing" constant="4" id="HXj-wl-lXt"/>
                     <constraint firstItem="CyK-0f-fl0" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" multiplier="0.6" id="LsH-K9-INY"/>
+                    <constraint firstAttribute="trailing" secondItem="xaN-MY-DDN" secondAttribute="trailing" id="MMs-q8-QWZ"/>
+                    <constraint firstAttribute="bottom" secondItem="xaN-MY-DDN" secondAttribute="bottom" id="bHJ-5r-HEj"/>
+                    <constraint firstItem="xaN-MY-DDN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="eID-fU-tvH"/>
                     <constraint firstAttribute="trailing" secondItem="CyK-0f-fl0" secondAttribute="trailing" constant="8" id="gaz-uA-qQM"/>
                     <constraint firstItem="HA9-IQ-jkh" firstAttribute="leading" secondItem="hij-83-O8q" secondAttribute="trailing" constant="8" id="jcY-8b-02b"/>
                     <constraint firstItem="CyK-0f-fl0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="m2e-Te-GG8"/>

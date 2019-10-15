@@ -15,8 +15,6 @@ class PostViewController: UIViewController {
         super.viewDidLoad()
 
         tableView.dataSource = self
-//        tableView.delegate = self
-//        tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 100
     }
     
@@ -47,12 +45,4 @@ extension PostViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellID, for: indexPath)
         return cell
     }
-    
-    
 }
-
-//extension PostViewController: UITableViewDelegate {
-//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-//        return 200
-//    }
-//}
