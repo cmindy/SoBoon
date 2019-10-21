@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="FeedListCell" id="KGk-i7-Jjw" customClass="FeedListCell" customModule="SoBoon" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P3p-4x-eOO" userLabel="BaseView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RpA-hU-mmr" userLabel="Thumb Base View">
+                                <rect key="frame" x="16" y="16" width="128" height="128"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Scc-QX-WK8" userLabel="Thumb Image View">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LkU-jV-tT0" userLabel="Date Base View">
+                                        <rect key="frame" x="6" y="6" width="43" height="20"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EVY-Tm-ZAn" userLabel="Date Label">
+                                                <rect key="frame" x="8" y="4" width="27" height="12"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="20" id="5NS-JK-H5L"/>
+                                            <constraint firstItem="EVY-Tm-ZAn" firstAttribute="leading" secondItem="LkU-jV-tT0" secondAttribute="leading" constant="8" id="96p-y9-FpJ"/>
+                                            <constraint firstItem="EVY-Tm-ZAn" firstAttribute="centerY" secondItem="LkU-jV-tT0" secondAttribute="centerY" id="lbE-PS-Jlq"/>
+                                            <constraint firstAttribute="trailing" secondItem="EVY-Tm-ZAn" secondAttribute="trailing" constant="8" id="ohK-cz-Tnd"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="RpA-hU-mmr" secondAttribute="height" multiplier="1:1" id="7B5-a4-pdA"/>
+                                    <constraint firstItem="Scc-QX-WK8" firstAttribute="leading" secondItem="RpA-hU-mmr" secondAttribute="leading" id="Iyx-QC-yhg"/>
+                                    <constraint firstAttribute="bottom" secondItem="Scc-QX-WK8" secondAttribute="bottom" id="LBC-nZ-Moy"/>
+                                    <constraint firstItem="Scc-QX-WK8" firstAttribute="top" secondItem="RpA-hU-mmr" secondAttribute="top" id="M6z-cK-zPP"/>
+                                    <constraint firstItem="LkU-jV-tT0" firstAttribute="top" secondItem="RpA-hU-mmr" secondAttribute="top" constant="6" id="R1Q-If-aXh"/>
+                                    <constraint firstAttribute="trailing" secondItem="Scc-QX-WK8" secondAttribute="trailing" id="uOb-6j-Jyr"/>
+                                    <constraint firstItem="LkU-jV-tT0" firstAttribute="leading" secondItem="RpA-hU-mmr" secondAttribute="leading" constant="6" id="vnP-em-o3b"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qyw-9B-GhC" userLabel="Title Label">
+                                <rect key="frame" x="156" y="28" width="148" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RH3-qt-T6m" userLabel="Price Label">
+                                <rect key="frame" x="156" y="86" width="148" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXL-ql-2DH" userLabel="Info Label">
+                                <rect key="frame" x="156" y="111" width="148" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="divider_b" translatesAutoresizingMaskIntoConstraints="NO" id="Aio-Ml-dff">
+                                <rect key="frame" x="0.0" y="159" width="320" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="3GF-HW-d3C"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Aio-Ml-dff" firstAttribute="leading" secondItem="P3p-4x-eOO" secondAttribute="leading" id="0O7-HO-HVL"/>
+                            <constraint firstItem="RH3-qt-T6m" firstAttribute="leading" secondItem="RpA-hU-mmr" secondAttribute="trailing" constant="12" id="22R-64-pMp"/>
+                            <constraint firstItem="Qyw-9B-GhC" firstAttribute="leading" secondItem="RpA-hU-mmr" secondAttribute="trailing" constant="12" id="9yx-3h-JAP"/>
+                            <constraint firstItem="RpA-hU-mmr" firstAttribute="leading" secondItem="P3p-4x-eOO" secondAttribute="leading" constant="16" id="Emo-31-cuB"/>
+                            <constraint firstAttribute="trailing" secondItem="Qyw-9B-GhC" secondAttribute="trailing" constant="16" id="I1S-Fe-sQf"/>
+                            <constraint firstItem="jXL-ql-2DH" firstAttribute="leading" secondItem="RpA-hU-mmr" secondAttribute="trailing" constant="12" id="Qqs-o2-qSD"/>
+                            <constraint firstItem="jXL-ql-2DH" firstAttribute="top" secondItem="RH3-qt-T6m" secondAttribute="bottom" constant="4" id="R2R-eb-Szv"/>
+                            <constraint firstAttribute="trailing" secondItem="jXL-ql-2DH" secondAttribute="trailing" constant="16" id="Uj6-1G-SoK"/>
+                            <constraint firstAttribute="height" constant="160" id="VEa-ko-e0O"/>
+                            <constraint firstAttribute="trailing" secondItem="RH3-qt-T6m" secondAttribute="trailing" constant="16" id="W7e-Nn-wbW"/>
+                            <constraint firstAttribute="bottom" secondItem="RpA-hU-mmr" secondAttribute="bottom" constant="16" id="dr8-rt-ylb"/>
+                            <constraint firstAttribute="trailing" secondItem="Aio-Ml-dff" secondAttribute="trailing" id="ehF-zD-BDQ"/>
+                            <constraint firstItem="RpA-hU-mmr" firstAttribute="top" secondItem="P3p-4x-eOO" secondAttribute="top" constant="16" id="iU7-9t-eTM"/>
+                            <constraint firstItem="RpA-hU-mmr" firstAttribute="bottom" secondItem="jXL-ql-2DH" secondAttribute="bottom" constant="12" id="vbJ-Sv-xBH"/>
+                            <constraint firstAttribute="bottom" secondItem="Aio-Ml-dff" secondAttribute="bottom" id="xTe-Xw-Rxd"/>
+                            <constraint firstItem="Qyw-9B-GhC" firstAttribute="top" secondItem="RpA-hU-mmr" secondAttribute="top" constant="12" id="zyg-Qi-MRf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="P3p-4x-eOO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="2cT-ER-A6r"/>
+                    <constraint firstAttribute="bottom" secondItem="P3p-4x-eOO" secondAttribute="bottom" id="BTS-nM-IVv"/>
+                    <constraint firstAttribute="trailing" secondItem="P3p-4x-eOO" secondAttribute="trailing" id="Ezj-vl-jbf"/>
+                    <constraint firstItem="P3p-4x-eOO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Yzd-r4-0Iw"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="baseView" destination="P3p-4x-eOO" id="1s0-Wr-XBm"/>
+                <outlet property="dateBaseView" destination="LkU-jV-tT0" id="2Qz-8L-1WU"/>
+                <outlet property="dateBaseViewHeightConstraint" destination="5NS-JK-H5L" id="Z9S-na-Bc1"/>
+                <outlet property="dateLabel" destination="EVY-Tm-ZAn" id="eYc-H1-DEm"/>
+                <outlet property="dividerView" destination="Aio-Ml-dff" id="Vyb-GX-UcC"/>
+                <outlet property="infoLabel" destination="jXL-ql-2DH" id="nLM-ya-R3H"/>
+                <outlet property="priceLabel" destination="RH3-qt-T6m" id="6jZ-dv-S7i"/>
+                <outlet property="thumbBaseView" destination="RpA-hU-mmr" id="FcP-6W-80U"/>
+                <outlet property="thumbImageView" destination="Scc-QX-WK8" id="jQy-r1-bGU"/>
+                <outlet property="titleLabel" destination="Qyw-9B-GhC" id="p2H-1C-AvA"/>
+            </connections>
+            <point key="canvasLocation" x="298.55072463768118" y="133.92857142857142"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="divider_b" width="2" height="1"/>
+    </resources>
+</document>

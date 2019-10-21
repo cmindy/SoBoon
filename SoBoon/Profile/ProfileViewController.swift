@@ -1,15 +1,14 @@
 //
-//  NotificationViewController.swift
+//  ProfileViewController.swift
 //  SoBoon
 //
-//  Created by CHOMINJI on 07/10/2019.
+//  Created by CHOMINJI on 15/10/2019.
 //  Copyright © 2019 cmindy. All rights reserved.
 //
 
 import UIKit
 
-
-class NotificationViewController: BaseViewController {
+class ProfileViewController: BaseViewController {
 
     // MARK: - Vars
     
@@ -29,8 +28,8 @@ class NotificationViewController: BaseViewController {
         self.navigationView.showBigTitle(bigTitle: self.isShowBigTitle)
         self.navigationView.bgColor(kWHITE)
         self.navigationView.titleColor(kGRAY_800)
-        self.navigationView.title("Notification")
-        self.navigationView.bigTitle("Notification")
+        self.navigationView.title("Profile")
+        self.navigationView.bigTitle("Profile")
         self.navigationView.divider(false)
     }
     
