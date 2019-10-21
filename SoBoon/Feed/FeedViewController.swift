@@ -11,6 +11,7 @@ import UIKit
 class FeedViewController: BaseViewController {
 
     // MARK: - Vars
+    
     @IBOutlet weak var mainTableView: UITableView!
     @IBOutlet weak var navigationView: FeedNavigationView!
     @IBOutlet weak var navigationViewHeightConstraint: NSLayoutConstraint!
@@ -30,7 +31,7 @@ class FeedViewController: BaseViewController {
         mainTableView.register(titleHeaderView, forHeaderFooterViewReuseIdentifier: kFeedTitleHeaderViewID)
         
         let footerView = UINib(nibName: kGeneralEmptyFooterViewID, bundle: nil)
-        mainTableView.register(footerView, forCellReuseIdentifier: kGeneralEmptyFooterViewID)
+        mainTableView.register(footerView, forHeaderFooterViewReuseIdentifier: kGeneralEmptyFooterViewID)
         
         let categoryCell = UINib(nibName: kFeedCategoryCellID, bundle: nil)
         mainTableView.register(categoryCell, forCellReuseIdentifier: kFeedCategoryCellID)
