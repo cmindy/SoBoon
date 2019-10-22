@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="5Zw-zI-TZK">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <rect key="frame" x="0.0" y="184" width="414" height="712"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3LZ-Rk-GkS" customClass="FeedNavigationView" customModule="SoBoon" customModuleProvider="target">
@@ -41,7 +41,7 @@
                             <constraint firstItem="5Zw-zI-TZK" firstAttribute="leading" secondItem="K18-SS-rpt" secondAttribute="leading" id="DfJ-Be-JbC"/>
                             <constraint firstItem="3LZ-Rk-GkS" firstAttribute="top" secondItem="K18-SS-rpt" secondAttribute="top" id="IW9-g8-MVT"/>
                             <constraint firstItem="fd3-VZ-D7L" firstAttribute="leading" secondItem="K18-SS-rpt" secondAttribute="leading" id="Mem-a0-CTo"/>
-                            <constraint firstItem="5Zw-zI-TZK" firstAttribute="top" secondItem="K18-SS-rpt" secondAttribute="top" id="SS1-Zl-AoK"/>
+                            <constraint firstItem="5Zw-zI-TZK" firstAttribute="top" secondItem="3LZ-Rk-GkS" secondAttribute="bottom" id="SS1-Zl-AoK"/>
                             <constraint firstItem="K18-SS-rpt" firstAttribute="trailing" secondItem="5Zw-zI-TZK" secondAttribute="trailing" id="T10-hd-VNq"/>
                             <constraint firstItem="3LZ-Rk-GkS" firstAttribute="leading" secondItem="K18-SS-rpt" secondAttribute="leading" id="Ugr-f4-PqG"/>
                             <constraint firstItem="fd3-VZ-D7L" firstAttribute="top" secondItem="3LZ-Rk-GkS" secondAttribute="bottom" constant="-25" id="urD-Lc-3Qp"/>

@@ -57,7 +57,7 @@ class FeedViewController: BaseViewController {
         mainTableView.rowHeight = UITableView.automaticDimension
         mainTableView.estimatedRowHeight = 200.0
         mainTableView.showsVerticalScrollIndicator = false
-        mainTableView.contentInset = UIEdgeInsets(top: navigationViewHeightConstraint.constant + 32.0, left: 0.0, bottom: 0.0, right: 0.0)
+       // mainTableView.contentInset = UIEdgeInsets(top: navigationViewHeightConstraint.constant + 32.0, left: 0.0, bottom: 0.0, right: 0.0)
     }
     
     override func viewDidLoad() {
@@ -149,96 +149,65 @@ extension FeedViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         
         let offset = scrollView.contentOffset.y
-        
-        let temp = navigationViewHeightConstraint.constant + 32.0 //172
-        
         let delta = previousOffset - offset
         print("contentOffset y =  \(scrollView.contentOffset.y)")
         print("previousOffset y =  \(previousOffset)")
         print("delta =  \(delta)")
         
-        if offset > -144 {
-            
-            UIView.animate(withDuration: 1.0, animations: {
+        let absoluteTop: CGFloat = 0
+        let absoluteBottom: CGFloat = scrollView.contentSize.height - scrollView.frame.size.height
+        
+        let isScrollingDown = delta > 0 && scrollView.contentOffset.y > absoluteTop
+        let isScrollingUp = delta < 0 && scrollView.contentOffset.y < absoluteBottom
+        print("\(isScrollingDown) : \(isScrollingUp)")
+        
+        // 검색창 높이: 50
+        // 카테고리높이: 80
+        // 헤더 높이: 44
+        let height: CGFloat = 124.0
+        if isScrollingUp, offset > height / 2.0 {
+            UIView.animate(withDuration: 0.5, animations: {
                 self.navigationView.titleLabel.isHidden = true
                 self.navigationView.addressLabel.isHidden = true
                 self.navigationView.iconImageview.isHidden = true
                 
-                self.mainTableViewTopConstraint.constant = -172.0 + 40
+                self.mainTableViewTopConstraint.constant = self.navigationViewHeightConstraint.constant * -1.0
                 self.searchView.frame.origin.y = self.view.safeAreaInsets.top
-                
-                
+            
                 if let header = self.mainTableView.headerView(forSection: FeedSectionType.categories.rawValue) {
                     header.isHidden = true
                 }
+
+                if let cell = self.mainTableView.cellForRow(at: IndexPath(row: 0, section: FeedSectionType.categories.rawValue)) as? FeedCategoryCell {
+                    self.navigationView.insertSubview(cell, aboveSubview: self.navigationView.baseView)
+                    cell.frame.origin.y = self.searchViewHeightConstraint.constant
+                }
                 
                 self.view.layoutIfNeeded()
-            }) { finished in
-                if finished {
-                    if let cell = self.mainTableView.cellForRow(at: IndexPath(row: 0, section: FeedSectionType.categories.rawValue)) as? FeedCategoryCell {
-                        self.navigationView.insertSubview(cell, aboveSubview: self.navigationView.baseView)
-                        cell.frame.origin.y = self.searchViewHeightConstraint.constant
-                        self.mainTableView.contentInset.top = self.navigationViewHeightConstraint.constant - self.searchViewHeightConstraint.constant
-                    }
+            })
+        } else if isScrollingDown, offset < height / 2.0 {
+            UIView.animate(withDuration: 0.5) {
+                self.navigationView.titleLabel.isHidden = false
+                self.navigationView.addressLabel.isHidden = false
+                self.navigationView.iconImageview.isHidden = false
+                
+                self.mainTableViewTopConstraint.constant = 0
+                
+                self.searchView.frame.origin.y = self.navigationViewHeightConstraint.constant
+                
+                if let header = self.mainTableView.headerView(forSection: FeedSectionType.categories.rawValue) {
+                    header.isHidden = false
                 }
+                
+                if let cell = self.mainTableView.cellForRow(at: IndexPath(row: 0, section: FeedSectionType.categories.rawValue)) as? FeedCategoryCell {
+                    self.navigationView.willRemoveSubview(cell)
+                    self.mainTableView.reloadRows(at: [IndexPath(row: 0, section: FeedSectionType.categories.rawValue)], with: .none)
+                }
+                
+                self.view.layoutIfNeeded()
+                
             }
-            //        }
-//            if offset < -172.0 {
-//                if let cell = self.mainTableView.cellForRow(at: IndexPath(row: 0, section: FeedSectionType.categories.rawValue)) {
-//                    cell.frame.origin.y = self.mainTableViewTopConstraint.constant + 100 + 25 + 44
-//                }
-//            }
-//
-            
         }
-        
-        
         previousOffset = offset
-//
-//        let headerCell = mainTableView.cellForRow(at: IndexPath(row: 0, section: FeedSectionType.categories.rawValue))
-//        if headerCell == nil || (headerCell!.frame.origin.y < self.mainTableView.contentOffset.y + headerCell!.frame.height/2) {
-//            if let hdr = header {
-//                hdr.isHidden = false
-//                hdr.frame = CGRect(x: 0, y: self.mainTableViewTopConstraint.constant, width: hdr.frame.size.width, height: hdr.frame.size.height)
-//                if !self.mainTableView.subviews.contains(hdr) {
-//                    self.mainTableView.addSubview(hdr)
-//                }
-//                self.mainTableView.bringSubviewToFront(hdr)
-//            }
-//        }
-        
-        
-        
-//        guard headerCell == nil || (headerCell!.frame.origin.y < self.mainTableView.contentOffset.y + headerCell!.frame.height/2) else {
-//            header?.isHidden = true
-//            return
-//        }
-//        guard let hdr = header else { return }
-//        hdr.isHidden = false
-//        hdr.frame = CGRect(x: 0, y: 0, width: hdr.frame.size.width, height: hdr.frame.size.height)
-//        if !mainTableView.subviews.contains(hdr) {
-//            mainTableView.addSubview(hdr)
-//        }
-//        mainTableView.bringSubviewToFront(hdr)
-       
-
-//        if (offset > -temp && offset < 0) {
-//            print(temp)
-//            self.navigationViewTopConstraint.constant = -(temp + offset)
-//            self.mainTableViewTopConstraint.constant = -(temp + offset)
-//        }
-//        if (offset > -temp && delta < 0) {
-////            mainTableView.contentInset = UIEdgeInsets(top: -offset , left: 0.0, bottom: 0.0, right: 0.0)
-////            UIView.animate(withDuration: 1.0) {
-//                self.mainTableView.contentInset.top = 100.0
-//                self.navigationViewTopConstraint.constant = -172.0 + 32.0
-//                self.mainTableViewTopConstraint.constant = -172.0 + 40
-//
-//
-//
-////                self.view.layoutIfNeeded()
-////            }
-//        }
     }
-    
 }
