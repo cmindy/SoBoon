@@ -50,9 +50,13 @@
                     </view>
                     <connections>
                         <outlet property="mainTableView" destination="5Zw-zI-TZK" id="b76-VP-xeJ"/>
+                        <outlet property="mainTableViewTopConstraint" destination="SS1-Zl-AoK" id="Ra9-B7-YhA"/>
                         <outlet property="navigationView" destination="3LZ-Rk-GkS" id="95f-q6-dde"/>
                         <outlet property="navigationViewHeightConstraint" destination="gu3-Hn-vTa" id="PoC-NM-WMw"/>
+                        <outlet property="navigationViewTopConstraint" destination="IW9-g8-MVT" id="RAq-en-Wb2"/>
                         <outlet property="searchView" destination="fd3-VZ-D7L" id="9cf-mZ-G0y"/>
+                        <outlet property="searchViewHeightConstraint" destination="4tV-jc-rd3" id="tvb-pC-x93"/>
+                        <outlet property="searchViewTopConstraint" destination="urD-Lc-3Qp" id="Dt5-eQ-CeE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aWq-hj-Bzk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

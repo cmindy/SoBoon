@@ -8,7 +8,7 @@
 
 import UIKit
 
-let kNotificationTableViewCellID =                      "NotificationTableViewCell"
+let kNotificationTableViewCellID = "NotificationTableViewCell"
 
 class NotificationTableViewCell: UITableViewCell {
 
