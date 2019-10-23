@@ -42,16 +42,9 @@
 		FA7EAFC22355F72200757B11 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7EAFC12355F72200757B11 /* Profile.storyboard */; };
 		FA7EAFC42355F72900757B11 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7EAFC32355F72900757B11 /* ProfileViewController.swift */; };
 		FA85ECC7234A5E7C00C6EBF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85ECC6234A5E7C00C6EBF4 /* AppDelegate.swift */; };
-		FA85ECCB234A5E7C00C6EBF4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85ECCA234A5E7C00C6EBF4 /* ViewController.swift */; };
 		FA85ECCE234A5E7C00C6EBF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA85ECCC234A5E7C00C6EBF4 /* Main.storyboard */; };
 		FA85ECD0234A5E7F00C6EBF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA85ECCF234A5E7F00C6EBF4 /* Assets.xcassets */; };
 		FA85ECD3234A5E7F00C6EBF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA85ECD1234A5E7F00C6EBF4 /* LaunchScreen.storyboard */; };
-		FA85ECDC234A621700C6EBF4 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85ECDA234A621700C6EBF4 /* FeedTableViewCell.swift */; };
-		FA85ECDD234A621700C6EBF4 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA85ECDB234A621700C6EBF4 /* FeedTableViewCell.xib */; };
-		FA85ECE6234A6AD800C6EBF4 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85ECE4234A6AD800C6EBF4 /* CategoryTableViewCell.swift */; };
-		FA85ECE7234A6AD800C6EBF4 /* CategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA85ECE5234A6AD800C6EBF4 /* CategoryTableViewCell.xib */; };
-		FA85ECEA234B120000C6EBF4 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85ECE8234B120000C6EBF4 /* NotificationTableViewCell.swift */; };
-		FA85ECEB234B120000C6EBF4 /* NotificationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA85ECE9234B120000C6EBF4 /* NotificationTableViewCell.xib */; };
 		FA85ECEE234B146300C6EBF4 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85ECED234B146300C6EBF4 /* NotificationViewController.swift */; };
 		FA90062A235A1A7500E517B4 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA900629235A1A7500E517B4 /* FeedViewController.swift */; };
 		FAB6C6A723519AEB00572B74 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB6C6A623519AEB00572B74 /* Feed.storyboard */; };
@@ -95,17 +88,10 @@
 		FA7EAFC32355F72900757B11 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		FA85ECC3234A5E7C00C6EBF4 /* SoBoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoBoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA85ECC6234A5E7C00C6EBF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FA85ECCA234A5E7C00C6EBF4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FA85ECCD234A5E7C00C6EBF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA85ECCF234A5E7F00C6EBF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA85ECD2234A5E7F00C6EBF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA85ECD4234A5E7F00C6EBF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FA85ECDA234A621700C6EBF4 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
-		FA85ECDB234A621700C6EBF4 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
-		FA85ECE4234A6AD800C6EBF4 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
-		FA85ECE5234A6AD800C6EBF4 /* CategoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryTableViewCell.xib; sourceTree = "<group>"; };
-		FA85ECE8234B120000C6EBF4 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
-		FA85ECE9234B120000C6EBF4 /* NotificationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationTableViewCell.xib; sourceTree = "<group>"; };
 		FA85ECED234B146300C6EBF4 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		FA900629235A1A7500E517B4 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		FAB6C6A623519AEB00572B74 /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
@@ -135,8 +121,6 @@
 		FA7EAFAE2355F36400757B11 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
-				FA85ECDA234A621700C6EBF4 /* FeedTableViewCell.swift */,
-				FA85ECDB234A621700C6EBF4 /* FeedTableViewCell.xib */,
 				FA051F13235C33AD00A01418 /* FeedListCell.swift */,
 				FA051F14235C33AD00A01418 /* FeedListCell.xib */,
 				FA051F17235C3A7D00A01418 /* FeedCategoryListCell.swift */,
@@ -270,10 +254,6 @@
 			isa = PBXGroup;
 			children = (
 				FA7EAFAE2355F36400757B11 /* Feed */,
-				FA85ECE8234B120000C6EBF4 /* NotificationTableViewCell.swift */,
-				FA85ECE9234B120000C6EBF4 /* NotificationTableViewCell.xib */,
-				FA85ECE4234A6AD800C6EBF4 /* CategoryTableViewCell.swift */,
-				FA85ECE5234A6AD800C6EBF4 /* CategoryTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -291,7 +271,6 @@
 			children = (
 				FAB6C6A623519AEB00572B74 /* Feed.storyboard */,
 				FA900629235A1A7500E517B4 /* FeedViewController.swift */,
-				FA85ECCA234A5E7C00C6EBF4 /* ViewController.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -381,8 +360,6 @@
 				FA051F28235C430D00A01418 /* FeedSearchView.xib in Resources */,
 				FA051F1A235C3A7D00A01418 /* FeedCategoryListCell.xib in Resources */,
 				FA051F2C235C4F6C00A01418 /* FeedTitleHeaderView.xib in Resources */,
-				FA85ECDD234A621700C6EBF4 /* FeedTableViewCell.xib in Resources */,
-				FA85ECE7234A6AD800C6EBF4 /* CategoryTableViewCell.xib in Resources */,
 				FA7EAFC22355F72200757B11 /* Profile.storyboard in Resources */,
 				FA051F20235C3C7B00A01418 /* FeedCategoryCell.xib in Resources */,
 				FA7EAFBE2355F6F600757B11 /* Notification.storyboard in Resources */,
@@ -391,7 +368,6 @@
 				FA7EAFA32355F0EA00757B11 /* Splash.storyboard in Resources */,
 				FA7EAFA62355F15600757B11 /* Base.storyboard in Resources */,
 				FA48C8D0235633FA004FB593 /* GeneralNavigationView.xib in Resources */,
-				FA85ECEB234B120000C6EBF4 /* NotificationTableViewCell.xib in Resources */,
 				FA051F32235CC99D00A01418 /* GeneralEmptyFooterView.xib in Resources */,
 				FA85ECCE234A5E7C00C6EBF4 /* Main.storyboard in Resources */,
 			);
@@ -408,8 +384,6 @@
 				FA7EAFAD2355F34B00757B11 /* UIView+Shadow.swift in Sources */,
 				FA6D4824234CB315007E0991 /* PostViewController.swift in Sources */,
 				FA7EAFB92355F3EF00757B11 /* FloatingTabbar.swift in Sources */,
-				FA85ECEA234B120000C6EBF4 /* NotificationTableViewCell.swift in Sources */,
-				FA85ECCB234A5E7C00C6EBF4 /* ViewController.swift in Sources */,
 				FA051F34235CCAEC00A01418 /* GeneralEmptyFooterView.swift in Sources */,
 				FA051F22235C411700A01418 /* FeedNavigationView.swift in Sources */,
 				FA7EAFA12355F0D800757B11 /* SplashViewController.swift in Sources */,
@@ -419,13 +393,11 @@
 				FA7EAFC42355F72900757B11 /* ProfileViewController.swift in Sources */,
 				FA7EAF9D2355F08100757B11 /* Constants.swift in Sources */,
 				FAB6C6B323519B7E00572B74 /* BaseViewController.swift in Sources */,
-				FA85ECDC234A621700C6EBF4 /* FeedTableViewCell.swift in Sources */,
 				FA051F2E235C4F9300A01418 /* FeedTitleHeaderView.swift in Sources */,
 				FA90062A235A1A7500E517B4 /* FeedViewController.swift in Sources */,
 				FA051F26235C430500A01418 /* FeedSearchView.swift in Sources */,
 				FA7EAFA92355F17100757B11 /* BaseTabBarViewController.swift in Sources */,
 				FA85ECC7234A5E7C00C6EBF4 /* AppDelegate.swift in Sources */,
-				FA85ECE6234A6AD800C6EBF4 /* CategoryTableViewCell.swift in Sources */,
 				FA051F19235C3A7D00A01418 /* FeedCategoryListCell.swift in Sources */,
 				FA051F1F235C3C7B00A01418 /* FeedCategoryCell.swift in Sources */,
 				FA7EAFB62355F3E700757B11 /* InteractivePopRecognizer.swift in Sources */,
