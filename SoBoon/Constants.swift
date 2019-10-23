@@ -191,3 +191,6 @@ let kLEVEL_4_HIGHLIGHT =                UIColor.init(red: 160/255, green: 54/255
 
 let kLEVEL_5 =                          UIColor.init(red: 207/255, green: 143/255, blue: 75/255, alpha: 1.0)
 let kLEVEL_5_HIGHLIGHT =                UIColor.init(red: 197/255, green: 133/255, blue: 65/255, alpha: 1.0)
+
+let kGRAY =                             UIColor.init(red: 153/255, green: 153/255, blue: 153/255, alpha: 1.0)
+let kGRAY_LIGHT =                       UIColor.init(red: 198/255, green: 198/255, blue: 198/255, alpha: 1.0)

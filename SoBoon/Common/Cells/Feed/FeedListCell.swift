@@ -77,6 +77,7 @@ class FeedListCell: UITableViewCell {
         let attrString = GeneralHelper.sharedInstance.style(text: priceString,
                                                             changeText: "소분가",
                                                             underLine: nil,
+                                                            strikeThroughLine: nil,
                                                             font: nil,
                                                             color: kGRAY_300,
                                                             lineSpacing: nil)

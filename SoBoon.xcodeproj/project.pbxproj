@@ -22,6 +22,8 @@
 		FA051F32235CC99D00A01418 /* GeneralEmptyFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA051F31235CC99D00A01418 /* GeneralEmptyFooterView.xib */; };
 		FA051F34235CCAEC00A01418 /* GeneralEmptyFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA051F33235CCAEC00A01418 /* GeneralEmptyFooterView.swift */; };
 		FA051F5A23602F2500A01418 /* GeneralGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA051F5923602F2500A01418 /* GeneralGradientView.swift */; };
+		FA051F602360B0DE00A01418 /* ProductDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA051F5E2360B0DE00A01418 /* ProductDescriptionCell.swift */; };
+		FA051F612360B0DE00A01418 /* ProductDescriptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA051F5F2360B0DE00A01418 /* ProductDescriptionCell.xib */; };
 		FA0A8C1C234C8AE300C469BC /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0A8C1B234C8AE300C469BC /* UIView+Extension.swift */; };
 		FA48C8D0235633FA004FB593 /* GeneralNavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA48C8CF235633FA004FB593 /* GeneralNavigationView.xib */; };
 		FA48C8D22356340F004FB593 /* GeneralNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA48C8D12356340F004FB593 /* GeneralNavigationView.swift */; };
@@ -67,6 +69,8 @@
 		FA051F31235CC99D00A01418 /* GeneralEmptyFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeneralEmptyFooterView.xib; sourceTree = "<group>"; };
 		FA051F33235CCAEC00A01418 /* GeneralEmptyFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralEmptyFooterView.swift; sourceTree = "<group>"; };
 		FA051F5923602F2500A01418 /* GeneralGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralGradientView.swift; sourceTree = "<group>"; };
+		FA051F5E2360B0DE00A01418 /* ProductDescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDescriptionCell.swift; sourceTree = "<group>"; };
+		FA051F5F2360B0DE00A01418 /* ProductDescriptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductDescriptionCell.xib; sourceTree = "<group>"; };
 		FA0A8C1B234C8AE300C469BC /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		FA48C8CF235633FA004FB593 /* GeneralNavigationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeneralNavigationView.xib; sourceTree = "<group>"; };
 		FA48C8D12356340F004FB593 /* GeneralNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralNavigationView.swift; sourceTree = "<group>"; };
@@ -109,6 +113,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA051F5B2360B02A00A01418 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				FA051F5E2360B0DE00A01418 /* ProductDescriptionCell.swift */,
+				FA051F5F2360B0DE00A01418 /* ProductDescriptionCell.xib */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
 		FA7EAFA42355F0F100757B11 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
@@ -253,6 +266,7 @@
 		FAB6C6AD23519B4700572B74 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				FA051F5B2360B02A00A01418 /* Product */,
 				FA7EAFAE2355F36400757B11 /* Feed */,
 			);
 			path = Cells;
@@ -367,6 +381,7 @@
 				FA85ECD0234A5E7F00C6EBF4 /* Assets.xcassets in Resources */,
 				FA7EAFA32355F0EA00757B11 /* Splash.storyboard in Resources */,
 				FA7EAFA62355F15600757B11 /* Base.storyboard in Resources */,
+				FA051F612360B0DE00A01418 /* ProductDescriptionCell.xib in Resources */,
 				FA48C8D0235633FA004FB593 /* GeneralNavigationView.xib in Resources */,
 				FA051F32235CC99D00A01418 /* GeneralEmptyFooterView.xib in Resources */,
 				FA85ECCE234A5E7C00C6EBF4 /* Main.storyboard in Resources */,
@@ -384,6 +399,7 @@
 				FA7EAFAD2355F34B00757B11 /* UIView+Shadow.swift in Sources */,
 				FA6D4824234CB315007E0991 /* PostViewController.swift in Sources */,
 				FA7EAFB92355F3EF00757B11 /* FloatingTabbar.swift in Sources */,
+				FA051F602360B0DE00A01418 /* ProductDescriptionCell.swift in Sources */,
 				FA051F34235CCAEC00A01418 /* GeneralEmptyFooterView.swift in Sources */,
 				FA051F22235C411700A01418 /* FeedNavigationView.swift in Sources */,
 				FA7EAFA12355F0D800757B11 /* SplashViewController.swift in Sources */,

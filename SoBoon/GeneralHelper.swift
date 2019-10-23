@@ -50,6 +50,7 @@ extension GeneralHelper {
     func style(text: String,
                changeText: String,
                underLine: Bool?,
+               strikeThroughLine: Bool?,
                font: UIFont?,
                color: UIColor?,
                lineSpacing: CGFloat?) -> NSAttributedString {
@@ -58,6 +59,11 @@ extension GeneralHelper {
         
         if let _ = underLine {
             attributedString.addAttribute(NSAttributedString.Key.underlineStyle, value: NSUnderlineStyle.single.rawValue , range: range)
+        }
+        
+        if let _ = strikeThroughLine {
+            attributedString.addAttribute(NSAttributedString.Key.strikethroughStyle, value:
+                NSUnderlineStyle.single.rawValue , range: range)
         }
         
         if let font = font {
