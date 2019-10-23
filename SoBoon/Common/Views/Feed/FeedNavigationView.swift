@@ -12,7 +12,7 @@ class FeedNavigationView: BaseCustomView {
 
     // MARK: - Vars
     
-    @IBOutlet weak var baseView: UIView!
+    @IBOutlet weak var baseView: GeneralGradientView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var iconImageview: UIImageView!
     @IBOutlet weak var addressLabel: UILabel!
@@ -24,7 +24,7 @@ class FeedNavigationView: BaseCustomView {
     }
     
     private func initBackgroundView() {
-        baseView.backgroundColor = kPINK_500
+        
     }
     
     private func initLabels() {

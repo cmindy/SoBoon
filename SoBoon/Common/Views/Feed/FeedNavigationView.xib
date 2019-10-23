@@ -20,7 +20,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c4C-cr-lLL">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c4C-cr-lLL" customClass="GeneralGradientView" customModule="SoBoon" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="140"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pLG-3n-Abi">
@@ -64,6 +64,23 @@
                         <constraint firstItem="pLG-3n-Abi" firstAttribute="top" secondItem="c4C-cr-lLL" secondAttribute="top" id="aXo-Ys-fDx"/>
                         <constraint firstAttribute="trailing" secondItem="pLG-3n-Abi" secondAttribute="trailing" id="d7h-Qo-M6H"/>
                     </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="topColor">
+                            <color key="value" red="1" green="0.1803921568627451" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="bottomColor">
+                            <color key="value" red="1" green="0.41176470588235292" blue="0.38431372549019605" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="endPointY">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="startPointY">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="0.0"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
                 </view>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
