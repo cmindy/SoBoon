@@ -53,6 +53,7 @@
 		FA90062A235A1A7500E517B4 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA900629235A1A7500E517B4 /* FeedViewController.swift */; };
 		FAB6C6A723519AEB00572B74 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB6C6A623519AEB00572B74 /* Feed.storyboard */; };
 		FAB6C6B323519B7E00572B74 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB6C6B223519B7E00572B74 /* BaseViewController.swift */; };
+		FAE9BA7B23634078008BE3E4 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE9BA7A23634078008BE3E4 /* ProductViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +105,7 @@
 		FA900629235A1A7500E517B4 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		FAB6C6A623519AEB00572B74 /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
 		FAB6C6B223519B7E00572B74 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		FAE9BA7A23634078008BE3E4 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +293,7 @@
 			children = (
 				FAB6C6A623519AEB00572B74 /* Feed.storyboard */,
 				FA900629235A1A7500E517B4 /* FeedViewController.swift */,
+				FAE9BA7A23634078008BE3E4 /* ProductViewController.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 				FA7EAFA12355F0D800757B11 /* SplashViewController.swift in Sources */,
 				FA0A8C1C234C8AE300C469BC /* UIView+Extension.swift in Sources */,
 				FA85ECEE234B146300C6EBF4 /* NotificationViewController.swift in Sources */,
+				FAE9BA7B23634078008BE3E4 /* ProductViewController.swift in Sources */,
 				FA051F15235C33AD00A01418 /* FeedListCell.swift in Sources */,
 				FA7EAFC42355F72900757B11 /* ProfileViewController.swift in Sources */,
 				FA7EAF9D2355F08100757B11 /* Constants.swift in Sources */,

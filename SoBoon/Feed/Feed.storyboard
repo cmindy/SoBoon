@@ -48,6 +48,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="K18-SS-rpt"/>
                     </view>
+                    <navigationItem key="navigationItem" id="7dq-E9-8sC"/>
                     <connections>
                         <outlet property="mainTableView" destination="5Zw-zI-TZK" id="b76-VP-xeJ"/>
                         <outlet property="mainTableViewTopConstraint" destination="SS1-Zl-AoK" id="Ra9-B7-YhA"/>
@@ -61,12 +62,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aWq-hj-Bzk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-192.75362318840581" y="38.839285714285715"/>
+            <point key="canvasLocation" x="717.39130434782612" y="38.839285714285715"/>
         </scene>
-        <!--View Controller-->
+        <!--Product View Controller-->
         <scene sceneID="igE-xF-74K">
             <objects>
-                <viewController id="maa-25-H5p" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProductViewController" id="maa-25-H5p" customClass="ProductViewController" customModule="SoBoon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YgH-qN-feZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -95,10 +96,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="J2x-ha-1qW"/>
                     </view>
+                    <connections>
+                        <outlet property="productTableView" destination="yQn-b3-5tm" id="7tt-AJ-aFg"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NAs-bP-6kR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="581.15942028985512" y="38.839285714285715"/>
+            <point key="canvasLocation" x="1491.304347826087" y="38.839285714285715"/>
         </scene>
     </scenes>
 </document>

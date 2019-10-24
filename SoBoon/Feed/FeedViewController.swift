@@ -138,6 +138,10 @@ extension FeedViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        
+        let sb = UIStoryboard.init(name: "Feed", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: "ProductViewController") as! ProductViewController
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     
