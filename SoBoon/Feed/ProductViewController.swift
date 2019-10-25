@@ -8,10 +8,11 @@
 
 import UIKit
 
-class ProductViewController: UIViewController {
+class ProductViewController: BaseViewController {
     
     // MARK: - Vars
     
+    @IBOutlet weak var navigationView: GeneralNavigationView!
     @IBOutlet weak var productTableView: UITableView!
     
     private let titleList = ["", "", "댓글"]
@@ -23,8 +24,20 @@ class ProductViewController: UIViewController {
     
     // MARK: - LifeCycle
     
+    private func initVars() {
+        self.isShowBigTitle = false
+    }
+    
     private func initBackgroundView() {
         self.view.backgroundColor = kWHITE
+    }
+    
+    private func initNavigationView() {
+        navigationView.showBigTitle(bigTitle: isShowBigTitle)
+        navigationView.backgroundColor = kWHITE
+        navigationView.divider(false)
+        navigationView.naviButtonColor(color: kGRAY_700)
+        navigationView.showBackButton()
     }
     
     private func initTableView() {
@@ -49,7 +62,9 @@ class ProductViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        initVars()
         initBackgroundView()
+        initNavigationView()
         initTableView()
     }
     

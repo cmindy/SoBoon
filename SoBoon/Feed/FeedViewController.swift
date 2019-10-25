@@ -65,6 +65,7 @@ class FeedViewController: BaseViewController {
 
         initBackgroundView()
         initTableView()
+        setInteractiveRecognizer()
     }
 
 }

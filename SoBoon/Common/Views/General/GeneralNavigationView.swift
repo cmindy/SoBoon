@@ -105,4 +105,9 @@ class GeneralNavigationView: BaseCustomView {
             self.titleLabel.alpha = 1.0
         }
     }
+    
+    func showBackButton() {
+        self.leftButton.isHidden = false
+        self.leftButton.setImage(UIImage(named: "icoChevron"), for: .normal)
+    }
 }

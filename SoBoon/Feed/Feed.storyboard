@@ -73,7 +73,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yQn-b3-5tm">
-                                <rect key="frame" x="0.0" y="44" width="414" height="768"/>
+                                <rect key="frame" x="0.0" y="96" width="414" height="716"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UQv-Sw-Nhs">
@@ -83,20 +83,31 @@
                                     <constraint firstAttribute="height" constant="84" id="ixi-1u-u4Z"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cSu-bc-GYY" customClass="GeneralNavigationView" customModule="SoBoon" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="cCl-ny-A7T"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="yQn-b3-5tm" firstAttribute="leading" secondItem="J2x-ha-1qW" secondAttribute="leading" id="4vg-eA-epc"/>
                             <constraint firstItem="UQv-Sw-Nhs" firstAttribute="leading" secondItem="J2x-ha-1qW" secondAttribute="leading" id="7nS-3b-04Q"/>
+                            <constraint firstItem="cSu-bc-GYY" firstAttribute="leading" secondItem="J2x-ha-1qW" secondAttribute="leading" id="C85-a3-2iT"/>
                             <constraint firstItem="UQv-Sw-Nhs" firstAttribute="trailing" secondItem="J2x-ha-1qW" secondAttribute="trailing" id="CQL-Dy-yR1"/>
-                            <constraint firstItem="yQn-b3-5tm" firstAttribute="top" secondItem="J2x-ha-1qW" secondAttribute="top" id="bkd-NJ-sS7"/>
+                            <constraint firstItem="J2x-ha-1qW" firstAttribute="trailing" secondItem="cSu-bc-GYY" secondAttribute="trailing" id="Mwd-CK-Dty"/>
                             <constraint firstAttribute="bottom" secondItem="UQv-Sw-Nhs" secondAttribute="bottom" id="dvn-lh-SUI"/>
+                            <constraint firstItem="J2x-ha-1qW" firstAttribute="top" secondItem="cSu-bc-GYY" secondAttribute="top" id="gRV-gr-nau"/>
                             <constraint firstItem="UQv-Sw-Nhs" firstAttribute="top" secondItem="yQn-b3-5tm" secondAttribute="bottom" id="jSV-aR-gRe"/>
+                            <constraint firstItem="yQn-b3-5tm" firstAttribute="top" secondItem="cSu-bc-GYY" secondAttribute="bottom" constant="8" id="v6E-1A-vsx"/>
                             <constraint firstItem="J2x-ha-1qW" firstAttribute="trailing" secondItem="yQn-b3-5tm" secondAttribute="trailing" id="zOU-dV-PpE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="J2x-ha-1qW"/>
                     </view>
                     <connections>
+                        <outlet property="navigationView" destination="cSu-bc-GYY" id="wAa-OV-vlV"/>
                         <outlet property="productTableView" destination="yQn-b3-5tm" id="7tt-AJ-aFg"/>
                     </connections>
                 </viewController>
