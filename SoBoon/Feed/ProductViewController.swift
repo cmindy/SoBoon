@@ -24,6 +24,9 @@ class ProductViewController: UIViewController {
     }
     
     private func initTableView() {
+        let imageCell = UINib(nibName: kProductImageCellID, bundle: nil)
+        productTableView.register(imageCell, forCellReuseIdentifier: kProductImageCellID)
+        
         let descriptionCell = UINib(nibName: kProductDescriptionCellID, bundle: nil)
         productTableView.register(descriptionCell, forCellReuseIdentifier: kProductDescriptionCellID)
         
@@ -53,6 +56,7 @@ class ProductViewController: UIViewController {
 extension ProductViewController: UITableViewDataSource {
     
     enum ProductSectionType: Int {
+        case image
         case description
         case comment
     }
@@ -62,7 +66,9 @@ extension ProductViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if section == ProductSectionType.description.rawValue {
+        if section == ProductSectionType.image.rawValue {
+            return 1
+        } else if section == ProductSectionType.description.rawValue {
             return 1
         }
         return dummyList.count
@@ -70,8 +76,10 @@ extension ProductViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell: UITableViewCell? = nil
-        
-        if indexPath.section == ProductSectionType.description.rawValue {
+        if indexPath.section ==  ProductSectionType.image.rawValue {
+            let cell_ = tableView.dequeueReusableCell(withIdentifier: kProductImageCellID, for: indexPath) as! ProductImageCell
+                       cell = cell_
+        } else if indexPath.section == ProductSectionType.description.rawValue {
             let cell_ = tableView.dequeueReusableCell(withIdentifier: kProductDescriptionCellID, for: indexPath) as! ProductDescriptionCell
             cell = cell_
         } else {

@@ -41,11 +41,12 @@ class ProductImageCell: UITableViewCell {
     }
     
     private func initLinkButton() {
-        linkButton.titleLabel?.textColor = kWHITE
         linkButton.titleLabel?.font = UIFont.systemFont(ofSize: 15, weight: .medium)
         linkButton.titleLabel?.textAlignment = .center
-        linkButton.titleLabel?.text = "상품 링크"
+        linkButton.setTitleColor(kWHITE, for: .normal)
+        linkButton.setTitle("상품 링크", for: .normal)
     }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         
