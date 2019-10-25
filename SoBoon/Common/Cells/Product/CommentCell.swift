@@ -51,6 +51,7 @@ class CommentCell: UITableViewCell {
         initVars()
         initBackgroundView()
         initProfileImageView()
+        initLabels()
     }
 
 }

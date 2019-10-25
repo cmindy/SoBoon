@@ -14,8 +14,12 @@ class ProductViewController: UIViewController {
     
     @IBOutlet weak var productTableView: UITableView!
     
-    private let titleList = ["", "댓글"]
-    private let dummyList = ["", "", "", ""]
+    private let titleList = ["", "", "댓글"]
+    private let dummyList = [DummyComment(name: "황희희", comment: "혹시 후문에서 쿨거래는 안될까요? ㅎㅎ"),
+                        DummyComment(name: "명써니", comment: "당근 빠따 가능한 부분 ^_^"),
+                        DummyComment(name: "흔지", comment: "옴마마! 대박 저 이거 진짜 좋아하는데 참여각!"),
+                        DummyComment(name: "명써니", comment: "와 흔지님 진짜 배우신분! ")]
+    
     
     // MARK: - LifeCycle
     
@@ -84,6 +88,10 @@ extension ProductViewController: UITableViewDataSource {
             cell = cell_
         } else {
             let cell_ = tableView.dequeueReusableCell(withIdentifier: kCommentCellID, for: indexPath) as! CommentCell
+            let comment = dummyList[indexPath.row]
+            cell_.nameLabel.text = comment.name
+            cell_.commentLabel.text = comment.comment
+            cell_.dateLabel.text = comment.date
             
             //                cell_.divider(true)
             //                if indexPath.row == dummyList.count - 1 {
@@ -116,3 +124,9 @@ extension ProductViewController: UITableViewDelegate {
 //
 //    }
 //}
+
+struct DummyComment {
+    let name: String
+    let comment: String
+    let date: String = "19/10/19 5:00"
+}
