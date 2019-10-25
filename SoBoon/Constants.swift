@@ -42,6 +42,7 @@ let kCLEAR_HIGHLIGHT =                  UIColor.init(red: 255/255, green: 255/25
 
 let kBLACK =                            UIColor.init(red: 0/255, green: 0/255, blue: 0/255, alpha: 1.0)
 let kBLACK_HIGHLIGHT =                  UIColor.init(red: 0/255, green: 0/255, blue: 0/255, alpha: 1.0)
+let kBLACK_ALPHA =                      UIColor.init(red: 0/255, green: 0/255, blue: 0/255, alpha: 0.7)
 
 let kWHITE =                            UIColor.init(red: 255/255, green: 255/255, blue: 255/255, alpha: 1.0)
 let kWHITE_HIGHLIGHT =                  UIColor.init(red: 250/255, green: 250/255, blue: 250/255, alpha: 1.0)

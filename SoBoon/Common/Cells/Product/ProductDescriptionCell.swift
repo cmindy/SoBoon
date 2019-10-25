@@ -81,3 +81,9 @@ class ProductDescriptionCell: UITableViewCell {
         initLabels()
     }
 }
+
+// MARK: -
+
+extension ProductDescriptionCell {
+    
+}
