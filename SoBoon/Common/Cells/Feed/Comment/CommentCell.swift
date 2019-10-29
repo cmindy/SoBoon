@@ -35,13 +35,13 @@ class CommentCell: UITableViewCell {
     }
     
     private func initLabels() {
-        nameLabel.font = UIFont.systemFont(ofSize: 17, weight: .medium)
+        nameLabel.font = UIFont.notoSansFont(ofSize: 16, weight: .medium)
         
         commentLabel.textColor = kGRAY
-        commentLabel.font = UIFont.systemFont(ofSize: 15, weight: .regular)
+        commentLabel.font = UIFont.notoSansFont(ofSize: 14, weight: .regular)
         
         dateLabel.textColor = kGRAY_LIGHT
-        dateLabel.font = UIFont.systemFont(ofSize: 14, weight: .regular)
+        dateLabel.font = UIFont.notoSansFont(ofSize: 14, weight: .regular)
     }
 
     override func awakeFromNib() {

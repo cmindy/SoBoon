@@ -40,7 +40,7 @@ class FeedDetailImageCell: UITableViewCell {
     }
     
     private func initLinkButton() {
-        linkButton.titleLabel?.font = UIFont.systemFont(ofSize: 15, weight: .medium)
+        linkButton.titleLabel?.font = UIFont.notoSansFont(ofSize: 14.0, weight: .regular)
         linkButton.titleLabel?.textAlignment = .center
         linkButton.setTitleColor(kWHITE, for: .normal)
         linkButton.setTitle("상품 링크", for: .normal)

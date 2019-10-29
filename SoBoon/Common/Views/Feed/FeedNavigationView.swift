@@ -29,11 +29,11 @@ class FeedNavigationView: BaseCustomView {
     
     private func initLabels() {
         titleLabel.textColor = kWHITE
-        titleLabel.font = UIFont.systemFont(ofSize: 24.0, weight: .heavy)
+        titleLabel.font = UIFont.notoSansFont(ofSize: 24.0, weight: .bold)
         titleLabel.text = "우리 동네, "
         
         addressLabel.textColor = kWHITE
-        addressLabel.font = UIFont.systemFont(ofSize: 14.0, weight: .regular)
+        addressLabel.font = UIFont.notoSansFont(ofSize: 16.0, weight: .bold)
         addressLabel.text = "서대문구 연세로"
     }
     

@@ -27,7 +27,7 @@ class FeedTitleHeaderView: UITableViewHeaderFooterView {
     
     private func initLabel() {
         titleLabel.textColor = kGRAY_800
-        titleLabel.font = UIFont.systemFont(ofSize: 16.0, weight: .heavy)
+        titleLabel.font = UIFont.notoSansFont(ofSize: 16.0, weight: .bold)
         titleLabel.textAlignment = .left
         titleLabel.text = nil
     }

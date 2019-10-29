@@ -36,28 +36,28 @@ class ProductDescriptionCell: UITableViewCell {
     }
     
     private func initLabels() {
-        titleLabel.font = UIFont.systemFont(ofSize: 20, weight: .bold)
+        titleLabel.font = UIFont.notoSansFont(ofSize: 20, weight: .bold)
         titleLabel.text = "달콤한 갈비만두 나누실 분 구함!"
         
         descriptionLabel.textColor = kGRAY
-        descriptionLabel.font = UIFont.systemFont(ofSize: 16, weight: .regular)
+        descriptionLabel.font = UIFont.notoSansFont(ofSize: 16, weight: .regular)
         descriptionLabel.numberOfLines = 3
         descriptionLabel.text = "출출할 땐 간식으로, 술땡길 땐 안주로 제격인 갈비만두 같이 구매하실 분 구합니다!! 제가 먹어봤는데 진짜 존맛탱이었어요. 빠른 소분 원해요. "
         
         dateLabel.textColor = kGRAY
-        dateLabel.font = UIFont.systemFont(ofSize: 17, weight: .bold)
+        dateLabel.font = UIFont.notoSansFont(ofSize: 16, weight: .bold)
         dateLabel.text = "2시간 2분 남음"
         
         participantLabel.textColor = kPINK_500
-        participantLabel.font = UIFont.systemFont(ofSize: 17, weight: .bold)
+        participantLabel.font = UIFont.notoSansFont(ofSize: 16, weight: .bold)
         participantLabel.text = "2/6 참여"
         
         placeLabel.textColor = kGRAY
-        placeLabel.font = UIFont.systemFont(ofSize: 15, weight: .regular)
+        placeLabel.font = UIFont.notoSansFont(ofSize: 14, weight: .medium)
         placeLabel.text = "oo대학교 예능관 픽업"
         
         previousPriceLabel.textColor =  kGRAY_LIGHT
-        previousPriceLabel.font = UIFont.systemFont(ofSize: 15, weight: .medium)
+        previousPriceLabel.font = UIFont.notoSansFont(ofSize: 14, weight: .medium)
         previousPriceLabel.text = "60,000원"
         let priceString = "60,000원"
         let attrString = GeneralHelper.sharedInstance.style(text: priceString,
@@ -69,7 +69,7 @@ class ProductDescriptionCell: UITableViewCell {
                                            lineSpacing: nil)
         previousPriceLabel.attributedText = attrString
         
-        currentPriceLabel.font = UIFont.systemFont(ofSize: 18, weight: .bold)
+        currentPriceLabel.font = UIFont.notoSansFont(ofSize: 18, weight: .bold)
         currentPriceLabel.text = "10,000원"
     }
 

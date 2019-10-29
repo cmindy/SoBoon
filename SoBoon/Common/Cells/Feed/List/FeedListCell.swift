@@ -53,23 +53,23 @@ class FeedListCell: UITableViewCell {
         dateBaseView.layer.cornerRadius = dateBaseViewHeightConstraint.constant / 2.0
         
         dateLabel.textColor = kWHITE
-        dateLabel.font = UIFont.systemFont(ofSize: 12.0, weight: .regular)
+        dateLabel.font = UIFont.notoSansFont(ofSize: 12.0, weight: .regular)
         dateLabel.textAlignment = .center
         dateLabel.text = "2시간 2분"
     }
     
     private func initLabels() {
         titleLabel.textColor = kGRAY_800
-        titleLabel.font = UIFont.systemFont(ofSize: 16.0, weight: .regular)
+        titleLabel.font = UIFont.notoSansFont(ofSize: 16.0, weight: .regular)
         titleLabel.numberOfLines = 2
         titleLabel.text = "[헬스앤뷰티] 더 부드러운 닭 가슴살(30개입) 나눔해요"
         
         infoLabel.textColor = kGRAY_400
-        infoLabel.font = UIFont.systemFont(ofSize: 14.0, weight: .regular)
+        infoLabel.font = UIFont.notoSansFont(ofSize: 14.0, weight: .medium)
         infoLabel.text = "30,000원 / 3명"
         
         priceLabel.textColor = kGRAY_800
-        priceLabel.font = UIFont.systemFont(ofSize: 16.0, weight: .bold)
+        priceLabel.font = UIFont.notoSansFont(ofSize: 16.0, weight: .bold)
         
         let priceString = "10,000원 소분가"
         let attrString = GeneralHelper.sharedInstance.style(text: priceString,

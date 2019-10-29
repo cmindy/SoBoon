@@ -35,7 +35,7 @@ class FeedCategoryListCell: UICollectionViewCell {
     
     private func initLabel() {
         titleLabel.textColor = kGRAY_800
-        titleLabel.font = UIFont.systemFont(ofSize: 12.0, weight: .regular)
+        titleLabel.font = UIFont.notoSansFont(ofSize: 14.0, weight: .regular)
         titleLabel.textAlignment = .center
     }
     
