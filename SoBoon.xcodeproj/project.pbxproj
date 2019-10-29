@@ -61,6 +61,7 @@
 		FAC8B19A23686B2D0026C2C7 /* NotoSansCJKkr-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = FAC8B19323686B2C0026C2C7 /* NotoSansCJKkr-Black.otf */; };
 		FAC8B19B23686B2D0026C2C7 /* NotoSansCJKkr-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = FAC8B19423686B2D0026C2C7 /* NotoSansCJKkr-Light.otf */; };
 		FAC8B19C23686B2D0026C2C7 /* NotoSansCJKkr-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FAC8B19523686B2D0026C2C7 /* NotoSansCJKkr-Regular.otf */; };
+		FAC8B19E23686F4B0026C2C7 /* UIFont+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC8B19D23686F4B0026C2C7 /* UIFont+Custom.swift */; };
 		FAE9BA7B23634078008BE3E4 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE9BA7A23634078008BE3E4 /* ProductViewController.swift */; };
 		FAE9BA8023635CB4008BE3E4 /* FeedDetailImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE9BA7E23635CB4008BE3E4 /* FeedDetailImageCell.swift */; };
 		FAE9BA8123635CB4008BE3E4 /* FeedDetailImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAE9BA7F23635CB4008BE3E4 /* FeedDetailImageCell.xib */; };
@@ -123,6 +124,7 @@
 		FAC8B19323686B2C0026C2C7 /* NotoSansCJKkr-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Black.otf"; sourceTree = "<group>"; };
 		FAC8B19423686B2D0026C2C7 /* NotoSansCJKkr-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Light.otf"; sourceTree = "<group>"; };
 		FAC8B19523686B2D0026C2C7 /* NotoSansCJKkr-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Regular.otf"; sourceTree = "<group>"; };
+		FAC8B19D23686F4B0026C2C7 /* UIFont+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Custom.swift"; sourceTree = "<group>"; };
 		FAE9BA7A23634078008BE3E4 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		FAE9BA7E23635CB4008BE3E4 /* FeedDetailImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailImageCell.swift; sourceTree = "<group>"; };
 		FAE9BA7F23635CB4008BE3E4 /* FeedDetailImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedDetailImageCell.xib; sourceTree = "<group>"; };
@@ -276,6 +278,7 @@
 				FA0A8C1B234C8AE300C469BC /* UIView+Extension.swift */,
 				FA7EAFAC2355F34B00757B11 /* UIView+Shadow.swift */,
 				FAC8B18C236860290026C2C7 /* ReusableIdentifier.swift */,
+				FAC8B19D23686F4B0026C2C7 /* UIFont+Custom.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -491,6 +494,7 @@
 				FA7EAFA92355F17100757B11 /* BaseTabBarViewController.swift in Sources */,
 				FA85ECC7234A5E7C00C6EBF4 /* AppDelegate.swift in Sources */,
 				FA051F19235C3A7D00A01418 /* FeedCategoryListCell.swift in Sources */,
+				FAC8B19E23686F4B0026C2C7 /* UIFont+Custom.swift in Sources */,
 				FA051F1F235C3C7B00A01418 /* FeedCategoryCell.swift in Sources */,
 				FA7EAFB62355F3E700757B11 /* InteractivePopRecognizer.swift in Sources */,
 				FA7EAFB42355F3D400757B11 /* TabItem.swift in Sources */,
