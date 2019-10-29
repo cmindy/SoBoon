@@ -23,7 +23,7 @@ enum NotoSansWeight: String {
 }
 
 extension UIFont {
-    static func notoSansFont(of size: CGFloat = UIFont.systemFontSize, weight: NotoSansWeight = .regular) -> UIFont {
+    static func notoSansFont(ofSize size: CGFloat = UIFont.systemFontSize, weight: NotoSansWeight = .regular) -> UIFont {
         return UIFont(name: "\(CustomFontName.notoSansCJKkr)\(weight.rawValue)", size: size)!
     }
     
