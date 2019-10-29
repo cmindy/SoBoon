@@ -57,6 +57,7 @@ class ProductViewController: BaseViewController {
         productTableView.rowHeight = UITableView.automaticDimension
         productTableView.estimatedRowHeight = 200.0
         productTableView.showsVerticalScrollIndicator = false
+        productTableView.separatorStyle = .none
     }
     
     override func viewDidLoad() {
@@ -103,10 +104,7 @@ extension ProductViewController: UITableViewDataSource {
             cell = cell_
         } else {
             let cell_ = tableView.dequeueReusableCell(withIdentifier: CommentCell.reuseID, for: indexPath) as! CommentCell
-            let comment = dummyList[indexPath.row]
-            cell_.nameLabel.text = comment.name
-            cell_.commentLabel.text = comment.comment
-            cell_.dateLabel.text = comment.date
+            cell_.entity(item: dummyList[indexPath.row])
             
             //                cell_.divider(true)
             //                if indexPath.row == dummyList.count - 1 {
