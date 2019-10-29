@@ -123,17 +123,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FA051F5B2360B02A00A01418 /* Product */ = {
+		FA051F5B2360B02A00A01418 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
 				FAE9BA7E23635CB4008BE3E4 /* ProductImageCell.swift */,
 				FAE9BA7F23635CB4008BE3E4 /* ProductImageCell.xib */,
 				FA051F5E2360B0DE00A01418 /* ProductDescriptionCell.swift */,
 				FA051F5F2360B0DE00A01418 /* ProductDescriptionCell.xib */,
-				FA896A6C2360BF9800ED6597 /* CommentCell.swift */,
-				FA896A6D2360BF9800ED6597 /* CommentCell.xib */,
 			);
-			path = Product;
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		FA7EAFA42355F0F100757B11 /* Splash */ = {
@@ -148,12 +146,9 @@
 		FA7EAFAE2355F36400757B11 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
-				FA051F13235C33AD00A01418 /* FeedListCell.swift */,
-				FA051F14235C33AD00A01418 /* FeedListCell.xib */,
-				FA051F17235C3A7D00A01418 /* FeedCategoryListCell.swift */,
-				FA051F18235C3A7D00A01418 /* FeedCategoryListCell.xib */,
-				FA051F1D235C3C7B00A01418 /* FeedCategoryCell.swift */,
-				FA051F1E235C3C7B00A01418 /* FeedCategoryCell.xib */,
+				FAC8B18B23685F310026C2C7 /* List */,
+				FA051F5B2360B02A00A01418 /* Detail */,
+				FAC8B18A23685E760026C2C7 /* Comment */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -280,7 +275,6 @@
 		FAB6C6AD23519B4700572B74 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				FA051F5B2360B02A00A01418 /* Product */,
 				FA7EAFAE2355F36400757B11 /* Feed */,
 			);
 			path = Cells;
@@ -322,6 +316,28 @@
 				FA7EAFA72355F17000757B11 /* BaseTabBarViewController.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		FAC8B18A23685E760026C2C7 /* Comment */ = {
+			isa = PBXGroup;
+			children = (
+				FA896A6C2360BF9800ED6597 /* CommentCell.swift */,
+				FA896A6D2360BF9800ED6597 /* CommentCell.xib */,
+			);
+			path = Comment;
+			sourceTree = "<group>";
+		};
+		FAC8B18B23685F310026C2C7 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				FA051F13235C33AD00A01418 /* FeedListCell.swift */,
+				FA051F14235C33AD00A01418 /* FeedListCell.xib */,
+				FA051F17235C3A7D00A01418 /* FeedCategoryListCell.swift */,
+				FA051F18235C3A7D00A01418 /* FeedCategoryListCell.xib */,
+				FA051F1D235C3C7B00A01418 /* FeedCategoryCell.swift */,
+				FA051F1E235C3C7B00A01418 /* FeedCategoryCell.xib */,
+			);
+			path = List;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

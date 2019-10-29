@@ -40,6 +40,7 @@ class ProductDescriptionCell: UITableViewCell {
         titleLabel.font = UIFont.systemFont(ofSize: 20, weight: .bold)
         titleLabel.text = "달콤한 갈비만두 나누실 분 구함!"
         
+        descriptionLabel.textColor = kGRAY
         descriptionLabel.font = UIFont.systemFont(ofSize: 16, weight: .regular)
         descriptionLabel.numberOfLines = 3
         descriptionLabel.text = "출출할 땐 간식으로, 술땡길 땐 안주로 제격인 갈비만두 같이 구매하실 분 구합니다!! 제가 먹어봤는데 진짜 존맛탱이었어요. 빠른 소분 원해요. "

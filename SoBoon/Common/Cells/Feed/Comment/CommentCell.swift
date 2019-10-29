@@ -55,3 +55,14 @@ class CommentCell: UITableViewCell {
     }
 
 }
+
+// MARK: -
+
+extension CommentCell {
+    
+    func entity(item: DummyComment) {
+        nameLabel.text = item.name
+        commentLabel.text = item.comment
+        dateLabel.text = item.date
+    }
+}
