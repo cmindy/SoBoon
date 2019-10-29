@@ -54,6 +54,13 @@
 		FAB6C6A723519AEB00572B74 /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB6C6A623519AEB00572B74 /* Feed.storyboard */; };
 		FAB6C6B323519B7E00572B74 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB6C6B223519B7E00572B74 /* BaseViewController.swift */; };
 		FAC8B18D236860290026C2C7 /* ReusableIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC8B18C236860290026C2C7 /* ReusableIdentifier.swift */; };
+		FAC8B19623686B2D0026C2C7 /* NotoSansCJKkr-DemiLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = FAC8B18F23686B280026C2C7 /* NotoSansCJKkr-DemiLight.otf */; };
+		FAC8B19723686B2D0026C2C7 /* NotoSansCJKkr-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = FAC8B19023686B290026C2C7 /* NotoSansCJKkr-Medium.otf */; };
+		FAC8B19823686B2D0026C2C7 /* NotoSansCJKkr-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = FAC8B19123686B2A0026C2C7 /* NotoSansCJKkr-Thin.otf */; };
+		FAC8B19923686B2D0026C2C7 /* NotoSansCJKkr-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = FAC8B19223686B2B0026C2C7 /* NotoSansCJKkr-Bold.otf */; };
+		FAC8B19A23686B2D0026C2C7 /* NotoSansCJKkr-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = FAC8B19323686B2C0026C2C7 /* NotoSansCJKkr-Black.otf */; };
+		FAC8B19B23686B2D0026C2C7 /* NotoSansCJKkr-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = FAC8B19423686B2D0026C2C7 /* NotoSansCJKkr-Light.otf */; };
+		FAC8B19C23686B2D0026C2C7 /* NotoSansCJKkr-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FAC8B19523686B2D0026C2C7 /* NotoSansCJKkr-Regular.otf */; };
 		FAE9BA7B23634078008BE3E4 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE9BA7A23634078008BE3E4 /* ProductViewController.swift */; };
 		FAE9BA8023635CB4008BE3E4 /* FeedDetailImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE9BA7E23635CB4008BE3E4 /* FeedDetailImageCell.swift */; };
 		FAE9BA8123635CB4008BE3E4 /* FeedDetailImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAE9BA7F23635CB4008BE3E4 /* FeedDetailImageCell.xib */; };
@@ -109,6 +116,13 @@
 		FAB6C6A623519AEB00572B74 /* Feed.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Feed.storyboard; sourceTree = "<group>"; };
 		FAB6C6B223519B7E00572B74 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		FAC8B18C236860290026C2C7 /* ReusableIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableIdentifier.swift; sourceTree = "<group>"; };
+		FAC8B18F23686B280026C2C7 /* NotoSansCJKkr-DemiLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-DemiLight.otf"; sourceTree = "<group>"; };
+		FAC8B19023686B290026C2C7 /* NotoSansCJKkr-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Medium.otf"; sourceTree = "<group>"; };
+		FAC8B19123686B2A0026C2C7 /* NotoSansCJKkr-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Thin.otf"; sourceTree = "<group>"; };
+		FAC8B19223686B2B0026C2C7 /* NotoSansCJKkr-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Bold.otf"; sourceTree = "<group>"; };
+		FAC8B19323686B2C0026C2C7 /* NotoSansCJKkr-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Black.otf"; sourceTree = "<group>"; };
+		FAC8B19423686B2D0026C2C7 /* NotoSansCJKkr-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Light.otf"; sourceTree = "<group>"; };
+		FAC8B19523686B2D0026C2C7 /* NotoSansCJKkr-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Regular.otf"; sourceTree = "<group>"; };
 		FAE9BA7A23634078008BE3E4 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		FAE9BA7E23635CB4008BE3E4 /* FeedDetailImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailImageCell.swift; sourceTree = "<group>"; };
 		FAE9BA7F23635CB4008BE3E4 /* FeedDetailImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedDetailImageCell.xib; sourceTree = "<group>"; };
@@ -231,6 +245,7 @@
 				FA85ECEC234B144800C6EBF4 /* View */,
 				FA85ECCC234A5E7C00C6EBF4 /* Main.storyboard */,
 				FAB6C6B123519B7500572B74 /* Base */,
+				FAC8B18E23686AFE0026C2C7 /* Font */,
 				FA85ECCF234A5E7F00C6EBF4 /* Assets.xcassets */,
 				FA85ECD1234A5E7F00C6EBF4 /* LaunchScreen.storyboard */,
 			);
@@ -343,6 +358,20 @@
 			path = List;
 			sourceTree = "<group>";
 		};
+		FAC8B18E23686AFE0026C2C7 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				FAC8B19323686B2C0026C2C7 /* NotoSansCJKkr-Black.otf */,
+				FAC8B19223686B2B0026C2C7 /* NotoSansCJKkr-Bold.otf */,
+				FAC8B18F23686B280026C2C7 /* NotoSansCJKkr-DemiLight.otf */,
+				FAC8B19423686B2D0026C2C7 /* NotoSansCJKkr-Light.otf */,
+				FAC8B19023686B290026C2C7 /* NotoSansCJKkr-Medium.otf */,
+				FAC8B19523686B2D0026C2C7 /* NotoSansCJKkr-Regular.otf */,
+				FAC8B19123686B2A0026C2C7 /* NotoSansCJKkr-Thin.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -401,24 +430,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC8B19A23686B2D0026C2C7 /* NotoSansCJKkr-Black.otf in Resources */,
 				FA051F24235C412000A01418 /* FeedNavigationView.xib in Resources */,
 				FA85ECD3234A5E7F00C6EBF4 /* LaunchScreen.storyboard in Resources */,
+				FAC8B19823686B2D0026C2C7 /* NotoSansCJKkr-Thin.otf in Resources */,
 				FA7EAFBA2355F3EF00757B11 /* FloatingTabbar.xib in Resources */,
 				FAB6C6A723519AEB00572B74 /* Feed.storyboard in Resources */,
+				FAC8B19923686B2D0026C2C7 /* NotoSansCJKkr-Bold.otf in Resources */,
+				FAC8B19B23686B2D0026C2C7 /* NotoSansCJKkr-Light.otf in Resources */,
 				FA051F28235C430D00A01418 /* FeedSearchView.xib in Resources */,
 				FA051F1A235C3A7D00A01418 /* FeedCategoryListCell.xib in Resources */,
 				FA051F2C235C4F6C00A01418 /* FeedTitleHeaderView.xib in Resources */,
 				FA7EAFC22355F72200757B11 /* Profile.storyboard in Resources */,
 				FA051F20235C3C7B00A01418 /* FeedCategoryCell.xib in Resources */,
+				FAC8B19C23686B2D0026C2C7 /* NotoSansCJKkr-Regular.otf in Resources */,
 				FA7EAFBE2355F6F600757B11 /* Notification.storyboard in Resources */,
 				FA051F16235C33AD00A01418 /* FeedListCell.xib in Resources */,
 				FA85ECD0234A5E7F00C6EBF4 /* Assets.xcassets in Resources */,
 				FA7EAFA32355F0EA00757B11 /* Splash.storyboard in Resources */,
 				FAE9BA8123635CB4008BE3E4 /* FeedDetailImageCell.xib in Resources */,
+				FAC8B19623686B2D0026C2C7 /* NotoSansCJKkr-DemiLight.otf in Resources */,
 				FA7EAFA62355F15600757B11 /* Base.storyboard in Resources */,
 				FA896A6F2360BF9800ED6597 /* CommentCell.xib in Resources */,
 				FA051F612360B0DE00A01418 /* ProductDescriptionCell.xib in Resources */,
 				FA48C8D0235633FA004FB593 /* GeneralNavigationView.xib in Resources */,
+				FAC8B19723686B2D0026C2C7 /* NotoSansCJKkr-Medium.otf in Resources */,
 				FA051F32235CC99D00A01418 /* GeneralEmptyFooterView.xib in Resources */,
 				FA85ECCE234A5E7C00C6EBF4 /* Main.storyboard in Resources */,
 			);
