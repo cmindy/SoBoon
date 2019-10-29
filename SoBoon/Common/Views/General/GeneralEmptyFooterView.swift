@@ -8,8 +8,6 @@
 
 import UIKit
 
-let kGeneralEmptyFooterViewID = "GeneralEmptyFooterView"
-
 class GeneralEmptyFooterView: UITableViewHeaderFooterView {
     
     // MARK: - Vars

@@ -55,8 +55,8 @@
 		FAB6C6B323519B7E00572B74 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB6C6B223519B7E00572B74 /* BaseViewController.swift */; };
 		FAC8B18D236860290026C2C7 /* ReusableIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC8B18C236860290026C2C7 /* ReusableIdentifier.swift */; };
 		FAE9BA7B23634078008BE3E4 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE9BA7A23634078008BE3E4 /* ProductViewController.swift */; };
-		FAE9BA8023635CB4008BE3E4 /* ProductImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE9BA7E23635CB4008BE3E4 /* ProductImageCell.swift */; };
-		FAE9BA8123635CB4008BE3E4 /* ProductImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAE9BA7F23635CB4008BE3E4 /* ProductImageCell.xib */; };
+		FAE9BA8023635CB4008BE3E4 /* FeedDetailImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE9BA7E23635CB4008BE3E4 /* FeedDetailImageCell.swift */; };
+		FAE9BA8123635CB4008BE3E4 /* FeedDetailImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAE9BA7F23635CB4008BE3E4 /* FeedDetailImageCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -110,8 +110,8 @@
 		FAB6C6B223519B7E00572B74 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		FAC8B18C236860290026C2C7 /* ReusableIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableIdentifier.swift; sourceTree = "<group>"; };
 		FAE9BA7A23634078008BE3E4 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
-		FAE9BA7E23635CB4008BE3E4 /* ProductImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductImageCell.swift; sourceTree = "<group>"; };
-		FAE9BA7F23635CB4008BE3E4 /* ProductImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductImageCell.xib; sourceTree = "<group>"; };
+		FAE9BA7E23635CB4008BE3E4 /* FeedDetailImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailImageCell.swift; sourceTree = "<group>"; };
+		FAE9BA7F23635CB4008BE3E4 /* FeedDetailImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedDetailImageCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,8 +128,8 @@
 		FA051F5B2360B02A00A01418 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				FAE9BA7E23635CB4008BE3E4 /* ProductImageCell.swift */,
-				FAE9BA7F23635CB4008BE3E4 /* ProductImageCell.xib */,
+				FAE9BA7E23635CB4008BE3E4 /* FeedDetailImageCell.swift */,
+				FAE9BA7F23635CB4008BE3E4 /* FeedDetailImageCell.xib */,
 				FA051F5E2360B0DE00A01418 /* ProductDescriptionCell.swift */,
 				FA051F5F2360B0DE00A01418 /* ProductDescriptionCell.xib */,
 			);
@@ -414,7 +414,7 @@
 				FA051F16235C33AD00A01418 /* FeedListCell.xib in Resources */,
 				FA85ECD0234A5E7F00C6EBF4 /* Assets.xcassets in Resources */,
 				FA7EAFA32355F0EA00757B11 /* Splash.storyboard in Resources */,
-				FAE9BA8123635CB4008BE3E4 /* ProductImageCell.xib in Resources */,
+				FAE9BA8123635CB4008BE3E4 /* FeedDetailImageCell.xib in Resources */,
 				FA7EAFA62355F15600757B11 /* Base.storyboard in Resources */,
 				FA896A6F2360BF9800ED6597 /* CommentCell.xib in Resources */,
 				FA051F612360B0DE00A01418 /* ProductDescriptionCell.xib in Resources */,
@@ -446,7 +446,7 @@
 				FA7EAFC42355F72900757B11 /* ProfileViewController.swift in Sources */,
 				FA7EAF9D2355F08100757B11 /* Constants.swift in Sources */,
 				FAB6C6B323519B7E00572B74 /* BaseViewController.swift in Sources */,
-				FAE9BA8023635CB4008BE3E4 /* ProductImageCell.swift in Sources */,
+				FAE9BA8023635CB4008BE3E4 /* FeedDetailImageCell.swift in Sources */,
 				FA896A6E2360BF9800ED6597 /* CommentCell.swift in Sources */,
 				FA051F2E235C4F9300A01418 /* FeedTitleHeaderView.swift in Sources */,
 				FA90062A235A1A7500E517B4 /* FeedViewController.swift in Sources */,

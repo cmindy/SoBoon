@@ -41,14 +41,14 @@ class ProductViewController: BaseViewController {
     }
     
     private func initTableView() {
-        let imageCell = UINib(nibName: kProductImageCellID, bundle: nil)
-        productTableView.register(imageCell, forCellReuseIdentifier: kProductImageCellID)
+        let imageCell = UINib(nibName: FeedDetailImageCell.reuseID, bundle: nil)
+        productTableView.register(imageCell, forCellReuseIdentifier: FeedDetailImageCell.reuseID)
         
-        let descriptionCell = UINib(nibName: kProductDescriptionCellID, bundle: nil)
-        productTableView.register(descriptionCell, forCellReuseIdentifier: kProductDescriptionCellID)
+        let descriptionCell = UINib(nibName: ProductDescriptionCell.reuseID, bundle: nil)
+        productTableView.register(descriptionCell, forCellReuseIdentifier: ProductDescriptionCell.reuseID)
         
-        let commentCell = UINib(nibName: kCommentCellID, bundle: nil)
-        productTableView.register(commentCell, forCellReuseIdentifier: kCommentCellID)
+        let commentCell = UINib(nibName: CommentCell.reuseID, bundle: nil)
+        productTableView.register(commentCell, forCellReuseIdentifier: CommentCell.reuseID)
         
         productTableView.delegate = self
         productTableView.dataSource = self
@@ -96,13 +96,13 @@ extension ProductViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var cell: UITableViewCell? = nil
         if indexPath.section ==  ProductSectionType.image.rawValue {
-            let cell_ = tableView.dequeueReusableCell(withIdentifier: kProductImageCellID, for: indexPath) as! ProductImageCell
-                       cell = cell_
+            let cell_ = tableView.dequeueReusableCell(withIdentifier: FeedDetailImageCell.reuseID, for: indexPath) as! FeedDetailImageCell
+            cell = cell_
         } else if indexPath.section == ProductSectionType.description.rawValue {
-            let cell_ = tableView.dequeueReusableCell(withIdentifier: kProductDescriptionCellID, for: indexPath) as! ProductDescriptionCell
+            let cell_ = tableView.dequeueReusableCell(withIdentifier: ProductDescriptionCell.reuseID, for: indexPath) as! ProductDescriptionCell
             cell = cell_
         } else {
-            let cell_ = tableView.dequeueReusableCell(withIdentifier: kCommentCellID, for: indexPath) as! CommentCell
+            let cell_ = tableView.dequeueReusableCell(withIdentifier: CommentCell.reuseID, for: indexPath) as! CommentCell
             let comment = dummyList[indexPath.row]
             cell_.nameLabel.text = comment.name
             cell_.commentLabel.text = comment.comment

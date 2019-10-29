@@ -19,6 +19,10 @@
                                 <rect key="frame" x="0.0" y="184" width="414" height="712"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vu3-wA-QFQ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="184"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3LZ-Rk-GkS" customClass="FeedNavigationView" customModule="SoBoon" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="414" height="140"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -36,7 +40,10 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="K18-SS-rpt" firstAttribute="trailing" secondItem="3LZ-Rk-GkS" secondAttribute="trailing" id="1eO-tD-09C"/>
+                            <constraint firstItem="vu3-wA-QFQ" firstAttribute="leading" secondItem="K18-SS-rpt" secondAttribute="leading" id="4jm-uI-yeV"/>
+                            <constraint firstItem="vu3-wA-QFQ" firstAttribute="bottom" secondItem="3LZ-Rk-GkS" secondAttribute="bottom" id="4o5-6f-mOl"/>
                             <constraint firstItem="K18-SS-rpt" firstAttribute="trailing" secondItem="fd3-VZ-D7L" secondAttribute="trailing" id="9IQ-4r-Qhj"/>
+                            <constraint firstItem="vu3-wA-QFQ" firstAttribute="top" secondItem="eyl-I0-Tp8" secondAttribute="top" id="CXF-bd-Cp7"/>
                             <constraint firstAttribute="bottom" secondItem="5Zw-zI-TZK" secondAttribute="bottom" id="DHH-kl-7dT"/>
                             <constraint firstItem="5Zw-zI-TZK" firstAttribute="leading" secondItem="K18-SS-rpt" secondAttribute="leading" id="DfJ-Be-JbC"/>
                             <constraint firstItem="3LZ-Rk-GkS" firstAttribute="top" secondItem="K18-SS-rpt" secondAttribute="top" id="IW9-g8-MVT"/>
@@ -44,6 +51,7 @@
                             <constraint firstItem="5Zw-zI-TZK" firstAttribute="top" secondItem="3LZ-Rk-GkS" secondAttribute="bottom" id="SS1-Zl-AoK"/>
                             <constraint firstItem="K18-SS-rpt" firstAttribute="trailing" secondItem="5Zw-zI-TZK" secondAttribute="trailing" id="T10-hd-VNq"/>
                             <constraint firstItem="3LZ-Rk-GkS" firstAttribute="leading" secondItem="K18-SS-rpt" secondAttribute="leading" id="Ugr-f4-PqG"/>
+                            <constraint firstItem="K18-SS-rpt" firstAttribute="trailing" secondItem="vu3-wA-QFQ" secondAttribute="trailing" id="ihq-C2-X2G"/>
                             <constraint firstItem="fd3-VZ-D7L" firstAttribute="top" secondItem="3LZ-Rk-GkS" secondAttribute="bottom" constant="-25" id="urD-Lc-3Qp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="K18-SS-rpt"/>

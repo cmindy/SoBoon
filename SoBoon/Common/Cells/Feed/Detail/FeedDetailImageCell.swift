@@ -8,8 +8,7 @@
 
 import UIKit
 
-let kProductImageCellID = "ProductImageCell"
-class ProductImageCell: UITableViewCell {
+class FeedDetailImageCell: UITableViewCell {
     
     // MARK: - Vars
     

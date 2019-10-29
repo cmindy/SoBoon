@@ -8,7 +8,6 @@
 
 import UIKit
 
-let kProductDescriptionCellID = "ProductDescriptionCell"
 class ProductDescriptionCell: UITableViewCell {
     
     // MARK: - Vars

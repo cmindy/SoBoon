@@ -8,8 +8,6 @@
 
 import UIKit
 
-let kFeedListCellID = "FeedListCell"
-
 class FeedListCell: UITableViewCell {
     
     // MARK: - Vars

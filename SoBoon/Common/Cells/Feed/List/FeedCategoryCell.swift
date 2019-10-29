@@ -8,8 +8,6 @@
 
 import UIKit
 
-let kFeedCategoryCellID = "FeedCategoryCell"
-
 class FeedCategoryCell: UITableViewCell {
 
     // MARK: - Vars
@@ -30,8 +28,8 @@ class FeedCategoryCell: UITableViewCell {
     }
     
     private func initCollectionView() {
-        let listCell = UINib(nibName: kFeedCategoryListCellID, bundle: nil)
-        categoryCollectionView.register(listCell, forCellWithReuseIdentifier: kFeedCategoryListCellID)
+        let listCell = UINib(nibName: FeedCategoryListCell.reuseID, bundle: nil)
+        categoryCollectionView.register(listCell, forCellWithReuseIdentifier: FeedCategoryListCell.reuseID)
         
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.scrollDirection = .horizontal
@@ -79,7 +77,7 @@ extension FeedCategoryCell: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kFeedCategoryListCellID, for: indexPath) as? FeedCategoryListCell else {
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: FeedCategoryListCell.reuseID, for: indexPath) as? FeedCategoryListCell else {
             return .init()
         }
         

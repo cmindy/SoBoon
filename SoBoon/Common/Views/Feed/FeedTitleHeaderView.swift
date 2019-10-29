@@ -8,8 +8,6 @@
 
 import UIKit
 
-let kFeedTitleHeaderViewID = "FeedTitleHeaderView"
-
 class FeedTitleHeaderView: UITableViewHeaderFooterView {
 
     // MARK: - Vars

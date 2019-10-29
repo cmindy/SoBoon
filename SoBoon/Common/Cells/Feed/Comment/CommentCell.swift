@@ -8,7 +8,6 @@
 
 import UIKit
 
-let kCommentCellID = "CommentCell"
 class CommentCell: UITableViewCell {
     
     // MARK: - Vars

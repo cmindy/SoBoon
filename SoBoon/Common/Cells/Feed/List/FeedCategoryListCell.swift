@@ -8,8 +8,6 @@
 
 import UIKit
 
-let kFeedCategoryListCellID = "FeedCategoryListCell"
-
 class FeedCategoryListCell: UICollectionViewCell {
 
     // MARK: - Vars
