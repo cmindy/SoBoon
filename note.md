@@ -108,7 +108,41 @@
                 coverHeightConstraint.constant = newHeight
     ```
 
--   
+
+
+
+- custom font
+
+  - ![image-20191029215643577](assets/image-20191029215643577.png)
+
+  - add target
+
+  - ![image-20191029215656246](assets/image-20191029215656246.png)
+
+  - info.plist에 등록
+
+  - ![image-20191029215740375](assets/image-20191029215740375.png)
+
+  - ```swift
+     for family in UIFont.familyNames {
+                print(family)
+                for names in UIFont.fontNames(forFamilyName: family) {
+                    print("== \(names)")
+                }
+            }
+    
+    ////
+    Noto Sans CJK KR
+    == NotoSansCJKkr-Black
+    == NotoSansCJKkr-Bold
+    == NotoSansCJKkr-Thin
+    == NotoSansCJKkr-Regular
+    == NotoSansCJKkr-Light
+    == NotoSansCJKkr-DemiLight
+    == NotoSansCJKkr-Medium
+    ```
+
+  - 
 
 ---
 
