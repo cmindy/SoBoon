@@ -48,6 +48,8 @@
 		FA85ECD0234A5E7F00C6EBF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA85ECCF234A5E7F00C6EBF4 /* Assets.xcassets */; };
 		FA85ECD3234A5E7F00C6EBF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA85ECD1234A5E7F00C6EBF4 /* LaunchScreen.storyboard */; };
 		FA85ECEE234B146300C6EBF4 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85ECED234B146300C6EBF4 /* NotificationViewController.swift */; };
+		FA863D922368B399007109E6 /* FeedDetailInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA863D902368B399007109E6 /* FeedDetailInfoCell.swift */; };
+		FA863D932368B399007109E6 /* FeedDetailInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA863D912368B399007109E6 /* FeedDetailInfoCell.xib */; };
 		FA896A6E2360BF9800ED6597 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA896A6C2360BF9800ED6597 /* CommentCell.swift */; };
 		FA896A6F2360BF9800ED6597 /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA896A6D2360BF9800ED6597 /* CommentCell.xib */; };
 		FA90062A235A1A7500E517B4 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA900629235A1A7500E517B4 /* FeedViewController.swift */; };
@@ -115,6 +117,8 @@
 		FA85ECD2234A5E7F00C6EBF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA85ECD4234A5E7F00C6EBF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA85ECED234B146300C6EBF4 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
+		FA863D902368B399007109E6 /* FeedDetailInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailInfoCell.swift; sourceTree = "<group>"; };
+		FA863D912368B399007109E6 /* FeedDetailInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedDetailInfoCell.xib; sourceTree = "<group>"; };
 		FA896A6C2360BF9800ED6597 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		FA896A6D2360BF9800ED6597 /* CommentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
 		FA900629235A1A7500E517B4 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +162,8 @@
 				FAE296AE23687AC800C720BD /* FeedDetailTitleCell.xib */,
 				FAE296B123687D9E00C720BD /* FeedDetailDescriptionCell.swift */,
 				FAE296B223687D9E00C720BD /* FeedDetailDescriptionCell.xib */,
+				FA863D902368B399007109E6 /* FeedDetailInfoCell.swift */,
+				FA863D912368B399007109E6 /* FeedDetailInfoCell.xib */,
 				FA051F5E2360B0DE00A01418 /* ProductDescriptionCell.swift */,
 				FA051F5F2360B0DE00A01418 /* ProductDescriptionCell.xib */,
 			);
@@ -457,6 +463,7 @@
 				FA051F28235C430D00A01418 /* FeedSearchView.xib in Resources */,
 				FA051F1A235C3A7D00A01418 /* FeedCategoryListCell.xib in Resources */,
 				FA051F2C235C4F6C00A01418 /* FeedTitleHeaderView.xib in Resources */,
+				FA863D932368B399007109E6 /* FeedDetailInfoCell.xib in Resources */,
 				FA7EAFC22355F72200757B11 /* Profile.storyboard in Resources */,
 				FA051F20235C3C7B00A01418 /* FeedCategoryCell.xib in Resources */,
 				FAC8B19C23686B2D0026C2C7 /* NotoSansCJKkr-Regular.otf in Resources */,
@@ -504,6 +511,7 @@
 				FA896A6E2360BF9800ED6597 /* CommentCell.swift in Sources */,
 				FA051F2E235C4F9300A01418 /* FeedTitleHeaderView.swift in Sources */,
 				FA90062A235A1A7500E517B4 /* FeedViewController.swift in Sources */,
+				FA863D922368B399007109E6 /* FeedDetailInfoCell.swift in Sources */,
 				FAC8B18D236860290026C2C7 /* ReusableIdentifier.swift in Sources */,
 				FA051F26235C430500A01418 /* FeedSearchView.swift in Sources */,
 				FA7EAFA92355F17100757B11 /* BaseTabBarViewController.swift in Sources */,
