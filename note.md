@@ -42,18 +42,18 @@
 
 
 
-<img src="/Users/momo/iOS/SoBoon/assets/KakaoTalk_Photo_2019-10-12-15-31-49.png" alt="KakaoTalk_Photo_2019-10-12-15-31-49" style="zoom:25%;" />
+<img src="assets/KakaoTalk_Photo_2019-10-12-15-31-49.png" alt="KakaoTalk_Photo_2019-10-12-15-31-49" style="zoom:25%;" />
 
 - 애니메이션
 - 커스텀 뷰 + 테이블 뷰 (셀 0: 컬렉션 뷰)
 
-<img src="/Users/momo/iOS/SoBoon/assets/image-20191020150046423.png" alt="image-20191020150046423" style="zoom:50%;" />
+<img src="assets/image-20191020150046423.png" alt="image-20191020150046423" style="zoom:50%;" />
 
 
 
 
 
-- <img src="/Users/momo/iOS/SoBoon/assets/image-20191020150537202.png" alt="image-20191020150537202" style="zoom:50%;" />
+- <img src="assets/image-20191020150537202.png" alt="image-20191020150537202" style="zoom:50%;" />
 
 - bottom 을 safe Area.bottom이 아니라 superView.bottom 으로 잡아준다
 - 
@@ -81,18 +81,62 @@
 
 - header footer view xib 오류
 
-  - <img src="/Users/momo/iOS/SoBoon/assets/image-20191021022705910.png" alt="image-20191021022705910" style="zoom:50%;" />
+  - <img src="assets/image-20191021022705910.png" alt="image-20191021022705910" style="zoom:50%;" />
   - background가 default여야한다.?
   - deprecated 됨
 
 - tableView에 UINib register
 
   - `mainTableView.register(titleHeaderView, forCellReuseIdentifier: kFeedTitleHeaderViewID)`
+  
+- ` mainTableView.register(titleHeaderView, forHeaderFooterViewReuseIdentifier: kFeedTitleHeaderViewID)`
+  
+- 2로 해야하는데... 1로 해놓고 왜 안될까 계속 고민함..ㅎㅎ...........등록한 nib도 다시 보자
+  
+- button title
 
-  -    ` mainTableView.register(titleHeaderView, forHeaderFooterViewReuseIdentifier: kFeedTitleHeaderViewID)`
+  -   button의 titleㅇ은 setTitle로 설정해줘야한다.
+  
+-   ```swift
+    if scrollView.contentOffset.y > (200 + largeNavigationBarHeight) {
+                    coverHeightConstraint.constant = 0
+                }
+                
+                let delta = previousOffset - scrollView.contentOffset.y
+                previousOffset = scrollView.contentOffset.y
+                let newHeight = coverHeightConstraint.constant + delta
+                coverHeightConstraint.constant = newHeight
+    ```
 
-  - 2로 해야하는데... 1로 해놓고 왜 안될까 계속 고민함..ㅎㅎ...........등록한 nib도 다시 보자
+-   
 
-    
+---
 
-    
+- GeneralHelper의 sharedInstance에 style
+
+  - String extension해도 될 것 같은데 왜 싱글턴?!
+
+- initVars()
+
+  - self.clipsToBound = true 는 어떤 용도?
+
+- CellID
+
+  - **let** kCommentCellID = "CommentCell"
+
+  - ```swift
+    extension NSObject {
+        static var reuseID: String {
+            return String(describing: self)
+        }
+    }
+    ```
+
+  - 요런식으루 많이 사용되는 cell들을 확장해서 하면 좋을 것 같다
+
+-  **var** cell: UITableViewCell? = **nil**
+
+  - 
+
+
+
