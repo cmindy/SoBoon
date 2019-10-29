@@ -62,6 +62,8 @@
 		FAC8B19B23686B2D0026C2C7 /* NotoSansCJKkr-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = FAC8B19423686B2D0026C2C7 /* NotoSansCJKkr-Light.otf */; };
 		FAC8B19C23686B2D0026C2C7 /* NotoSansCJKkr-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FAC8B19523686B2D0026C2C7 /* NotoSansCJKkr-Regular.otf */; };
 		FAC8B19E23686F4B0026C2C7 /* UIFont+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC8B19D23686F4B0026C2C7 /* UIFont+Custom.swift */; };
+		FAE296AF23687AC800C720BD /* FeedDetailTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE296AD23687AC800C720BD /* FeedDetailTitleCell.swift */; };
+		FAE296B023687AC800C720BD /* FeedDetailTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAE296AE23687AC800C720BD /* FeedDetailTitleCell.xib */; };
 		FAE9BA7B23634078008BE3E4 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE9BA7A23634078008BE3E4 /* ProductViewController.swift */; };
 		FAE9BA8023635CB4008BE3E4 /* FeedDetailImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE9BA7E23635CB4008BE3E4 /* FeedDetailImageCell.swift */; };
 		FAE9BA8123635CB4008BE3E4 /* FeedDetailImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAE9BA7F23635CB4008BE3E4 /* FeedDetailImageCell.xib */; };
@@ -125,6 +127,8 @@
 		FAC8B19423686B2D0026C2C7 /* NotoSansCJKkr-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Light.otf"; sourceTree = "<group>"; };
 		FAC8B19523686B2D0026C2C7 /* NotoSansCJKkr-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Regular.otf"; sourceTree = "<group>"; };
 		FAC8B19D23686F4B0026C2C7 /* UIFont+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Custom.swift"; sourceTree = "<group>"; };
+		FAE296AD23687AC800C720BD /* FeedDetailTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailTitleCell.swift; sourceTree = "<group>"; };
+		FAE296AE23687AC800C720BD /* FeedDetailTitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedDetailTitleCell.xib; sourceTree = "<group>"; };
 		FAE9BA7A23634078008BE3E4 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		FAE9BA7E23635CB4008BE3E4 /* FeedDetailImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailImageCell.swift; sourceTree = "<group>"; };
 		FAE9BA7F23635CB4008BE3E4 /* FeedDetailImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedDetailImageCell.xib; sourceTree = "<group>"; };
@@ -146,6 +150,8 @@
 			children = (
 				FAE9BA7E23635CB4008BE3E4 /* FeedDetailImageCell.swift */,
 				FAE9BA7F23635CB4008BE3E4 /* FeedDetailImageCell.xib */,
+				FAE296AD23687AC800C720BD /* FeedDetailTitleCell.swift */,
+				FAE296AE23687AC800C720BD /* FeedDetailTitleCell.xib */,
 				FA051F5E2360B0DE00A01418 /* ProductDescriptionCell.swift */,
 				FA051F5F2360B0DE00A01418 /* ProductDescriptionCell.xib */,
 			);
@@ -458,6 +464,7 @@
 				FA051F612360B0DE00A01418 /* ProductDescriptionCell.xib in Resources */,
 				FA48C8D0235633FA004FB593 /* GeneralNavigationView.xib in Resources */,
 				FAC8B19723686B2D0026C2C7 /* NotoSansCJKkr-Medium.otf in Resources */,
+				FAE296B023687AC800C720BD /* FeedDetailTitleCell.xib in Resources */,
 				FA051F32235CC99D00A01418 /* GeneralEmptyFooterView.xib in Resources */,
 				FA85ECCE234A5E7C00C6EBF4 /* Main.storyboard in Resources */,
 			);
@@ -499,6 +506,7 @@
 				FA7EAFB62355F3E700757B11 /* InteractivePopRecognizer.swift in Sources */,
 				FA7EAFB42355F3D400757B11 /* TabItem.swift in Sources */,
 				FA051F5A23602F2500A01418 /* GeneralGradientView.swift in Sources */,
+				FAE296AF23687AC800C720BD /* FeedDetailTitleCell.swift in Sources */,
 				FA7EAF9F2355F09200757B11 /* GeneralHelper.swift in Sources */,
 				FA48C8D22356340F004FB593 /* GeneralNavigationView.swift in Sources */,
 			);
