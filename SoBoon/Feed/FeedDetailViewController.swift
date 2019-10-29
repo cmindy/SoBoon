@@ -1,5 +1,5 @@
 //
-//  ProductViewController.swift
+//  FeedDetailViewController.swift
 //  SoBoon
 //
 //  Created by CHOMINJI on 25/10/2019.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProductViewController: BaseViewController {
+class FeedDetailViewController: BaseViewController {
     
     // MARK: - Vars
     
@@ -73,7 +73,7 @@ class ProductViewController: BaseViewController {
 
 // MARK: - UITableView
 
-extension ProductViewController: UITableViewDataSource {
+extension FeedDetailViewController: UITableViewDataSource {
     
     enum ProductSectionType: Int {
         case image
@@ -118,7 +118,7 @@ extension ProductViewController: UITableViewDataSource {
     }
 }
 
-extension ProductViewController: UITableViewDelegate {
+extension FeedDetailViewController: UITableViewDelegate {
     
 }
 

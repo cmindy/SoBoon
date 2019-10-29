@@ -68,7 +68,7 @@
 		FAE296B023687AC800C720BD /* FeedDetailTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAE296AE23687AC800C720BD /* FeedDetailTitleCell.xib */; };
 		FAE296B323687D9E00C720BD /* FeedDetailDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE296B123687D9E00C720BD /* FeedDetailDescriptionCell.swift */; };
 		FAE296B423687D9E00C720BD /* FeedDetailDescriptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAE296B223687D9E00C720BD /* FeedDetailDescriptionCell.xib */; };
-		FAE9BA7B23634078008BE3E4 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE9BA7A23634078008BE3E4 /* ProductViewController.swift */; };
+		FAE9BA7B23634078008BE3E4 /* FeedDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE9BA7A23634078008BE3E4 /* FeedDetailViewController.swift */; };
 		FAE9BA8023635CB4008BE3E4 /* FeedDetailImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE9BA7E23635CB4008BE3E4 /* FeedDetailImageCell.swift */; };
 		FAE9BA8123635CB4008BE3E4 /* FeedDetailImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAE9BA7F23635CB4008BE3E4 /* FeedDetailImageCell.xib */; };
 /* End PBXBuildFile section */
@@ -137,7 +137,7 @@
 		FAE296AE23687AC800C720BD /* FeedDetailTitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedDetailTitleCell.xib; sourceTree = "<group>"; };
 		FAE296B123687D9E00C720BD /* FeedDetailDescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailDescriptionCell.swift; sourceTree = "<group>"; };
 		FAE296B223687D9E00C720BD /* FeedDetailDescriptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedDetailDescriptionCell.xib; sourceTree = "<group>"; };
-		FAE9BA7A23634078008BE3E4 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		FAE9BA7A23634078008BE3E4 /* FeedDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailViewController.swift; sourceTree = "<group>"; };
 		FAE9BA7E23635CB4008BE3E4 /* FeedDetailImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailImageCell.swift; sourceTree = "<group>"; };
 		FAE9BA7F23635CB4008BE3E4 /* FeedDetailImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedDetailImageCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -332,7 +332,7 @@
 			children = (
 				FAB6C6A623519AEB00572B74 /* Feed.storyboard */,
 				FA900629235A1A7500E517B4 /* FeedViewController.swift */,
-				FAE9BA7A23634078008BE3E4 /* ProductViewController.swift */,
+				FAE9BA7A23634078008BE3E4 /* FeedDetailViewController.swift */,
 			);
 			path = Feed;
 			sourceTree = "<group>";
@@ -502,7 +502,7 @@
 				FA7EAFA12355F0D800757B11 /* SplashViewController.swift in Sources */,
 				FA0A8C1C234C8AE300C469BC /* UIView+Extension.swift in Sources */,
 				FA85ECEE234B146300C6EBF4 /* NotificationViewController.swift in Sources */,
-				FAE9BA7B23634078008BE3E4 /* ProductViewController.swift in Sources */,
+				FAE9BA7B23634078008BE3E4 /* FeedDetailViewController.swift in Sources */,
 				FA051F15235C33AD00A01418 /* FeedListCell.swift in Sources */,
 				FA7EAFC42355F72900757B11 /* ProfileViewController.swift in Sources */,
 				FA7EAF9D2355F08100757B11 /* Constants.swift in Sources */,

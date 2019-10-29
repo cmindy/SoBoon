@@ -72,10 +72,10 @@
             </objects>
             <point key="canvasLocation" x="717.39130434782612" y="38.839285714285715"/>
         </scene>
-        <!--Product View Controller-->
+        <!--Feed Detail View Controller-->
         <scene sceneID="igE-xF-74K">
             <objects>
-                <viewController storyboardIdentifier="ProductViewController" id="maa-25-H5p" customClass="ProductViewController" customModule="SoBoon" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FeedDetailViewController" id="maa-25-H5p" customClass="FeedDetailViewController" customModule="SoBoon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YgH-qN-feZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
