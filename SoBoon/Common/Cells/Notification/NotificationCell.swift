@@ -70,8 +70,19 @@ extension NotificationCell {
     
     private func initLabels() {
         titleLabel.font = UIFont.notoSansFont(ofSize: 16.0, weight: .medium)
+        titleLabel.numberOfLines = 2
         
         descriptionLabel.font = UIFont.notoSansFont(ofSize: 13.0, weight: .regular)
-        descriptionLabel.numberOfLines = 2
+    }
+}
+
+// MARK: -
+
+extension NotificationCell {
+    func configure(_ item: DummyNotification) {
+        titleLabel.text = item.title
+        descriptionLabel.text = item.description
+        profileImageView.image = item.profileImage
+        thumbImageView.image = item.thumbImage
     }
 }

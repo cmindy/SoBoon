@@ -108,6 +108,6 @@ class GeneralNavigationView: BaseCustomView {
     
     func showBackButton() {
         self.leftButton.isHidden = false
-        self.leftButton.setImage(UIImage(named: "icoChevron"), for: .normal)
+        self.leftButton.setImage(UIImage(named: "icBack"), for: .normal)
     }
 }

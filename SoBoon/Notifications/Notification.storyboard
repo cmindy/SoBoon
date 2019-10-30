@@ -16,14 +16,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DDB-pa-OPs">
-                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tr4-Nm-x7N" customClass="GeneralNavigationView" customModule="SoBoon" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44" width="414" height="100"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="bJe-bk-DwZ"/>
+                                    <constraint firstAttribute="height" constant="44" id="bJe-bk-DwZ"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -31,7 +31,7 @@
                         <constraints>
                             <constraint firstItem="DDB-pa-OPs" firstAttribute="leading" secondItem="7sZ-ho-LYx" secondAttribute="leading" id="1PR-h1-kpa"/>
                             <constraint firstItem="tr4-Nm-x7N" firstAttribute="leading" secondItem="7sZ-ho-LYx" secondAttribute="leading" id="FLx-u5-ahM"/>
-                            <constraint firstItem="DDB-pa-OPs" firstAttribute="top" secondItem="7sZ-ho-LYx" secondAttribute="top" id="HDD-dU-OTZ"/>
+                            <constraint firstItem="DDB-pa-OPs" firstAttribute="top" secondItem="tr4-Nm-x7N" secondAttribute="bottom" id="HDD-dU-OTZ"/>
                             <constraint firstItem="7sZ-ho-LYx" firstAttribute="trailing" secondItem="DDB-pa-OPs" secondAttribute="trailing" id="REs-3m-RAs"/>
                             <constraint firstItem="7sZ-ho-LYx" firstAttribute="trailing" secondItem="tr4-Nm-x7N" secondAttribute="trailing" id="ZzF-pN-044"/>
                             <constraint firstAttribute="bottom" secondItem="DDB-pa-OPs" secondAttribute="bottom" id="aBe-FG-S6k"/>
