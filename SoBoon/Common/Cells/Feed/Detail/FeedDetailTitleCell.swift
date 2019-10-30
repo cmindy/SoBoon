@@ -27,7 +27,7 @@ class FeedDetailTitleCell: UITableViewCell {
     
     private func initLabel() {
         titleLabel.font = UIFont.notoSansFont(ofSize: 20.0, weight: .bold)
-        titleLabel.text = "달콤한 갈비만두 나누실 분 구함!"
+//        titleLabel.text = "달콤한 갈비만두 나누실 분 구함!"
     }
     
     override func awakeFromNib() {
@@ -36,5 +36,12 @@ class FeedDetailTitleCell: UITableViewCell {
         initVars()
         initBackgroundView()
         initLabel()
+    }
+}
+
+// MARK: -
+extension FeedDetailTitleCell {
+    func configure(title: FeedDetailTitle) {
+        titleLabel.text = title.title
     }
 }

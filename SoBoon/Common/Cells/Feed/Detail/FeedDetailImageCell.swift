@@ -30,7 +30,7 @@ class FeedDetailImageCell: UITableViewCell {
     private func initImageView() {
         thumbImageView.contentMode = .scaleAspectFill
         thumbImageView.backgroundColor = kGRAY
-        thumbImageView.image = UIImage(named: "image_0")
+//        thumbImageView.image = UIImage(named: "image_0")
     }
     
     private func initLinkBaseView() {
@@ -54,5 +54,13 @@ class FeedDetailImageCell: UITableViewCell {
         initImageView()
         initLinkBaseView()
         initLinkButton()
+    }
+}
+
+// MARK: -
+
+extension FeedDetailImageCell {
+    func configure(image name: FeedDetailImage) {
+        imageView?.image = UIImage(named: name.imageName)
     }
 }

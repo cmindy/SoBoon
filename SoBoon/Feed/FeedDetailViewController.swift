@@ -20,7 +20,10 @@ class FeedDetailViewController: BaseViewController {
                         DummyComment(name: "명써니", comment: "당근 빠따 가능한 부분 ^_^"),
                         DummyComment(name: "흔지", comment: "옴마마! 대박 저 이거 진짜 좋아하는데 참여각!"),
                         DummyComment(name: "명써니", comment: "와 흔지님 진짜 배우신분! ")]
-    
+    private var cells: [ContentCellType] = [.image(FeedDetailImage(imageName: "image_0")),
+             .title(FeedDetailTitle(title: "달콤한 갈비만두 나누실 분 구함!")),
+             .description(FeedDetailDescription(description: "gg")),
+             .info(FeedDetailInfo(remainingTime: "2", participant: "d", place: "dsa", previousPrice: "sad", currentPrice: "dsd"))]
     
     // MARK: - LifeCycle
     
@@ -44,8 +47,14 @@ class FeedDetailViewController: BaseViewController {
         let imageCell = UINib(nibName: FeedDetailImageCell.reuseID, bundle: nil)
         productTableView.register(imageCell, forCellReuseIdentifier: FeedDetailImageCell.reuseID)
         
-        let descriptionCell = UINib(nibName: ProductDescriptionCell.reuseID, bundle: nil)
-        productTableView.register(descriptionCell, forCellReuseIdentifier: ProductDescriptionCell.reuseID)
+        let titleCell = UINib(nibName: FeedDetailTitleCell.reuseID, bundle: nil)
+        productTableView.register(titleCell, forCellReuseIdentifier: FeedDetailTitleCell.reuseID)
+        
+        let descriptionCell = UINib(nibName: FeedDetailDescriptionCell.reuseID, bundle: nil)
+        productTableView.register(descriptionCell, forCellReuseIdentifier: FeedDetailDescriptionCell.reuseID)
+        
+        let infoCell = UINib(nibName: FeedDetailInfoCell.reuseID, bundle: nil)
+        productTableView.register(infoCell, forCellReuseIdentifier: FeedDetailInfoCell.reuseID)
         
         let commentCell = UINib(nibName: CommentCell.reuseID, bundle: nil)
         productTableView.register(commentCell, forCellReuseIdentifier: CommentCell.reuseID)
@@ -68,53 +77,64 @@ class FeedDetailViewController: BaseViewController {
         initNavigationView()
         initTableView()
     }
-    
 }
 
 // MARK: - UITableView
 
 extension FeedDetailViewController: UITableViewDataSource {
     
-    enum ProductSectionType: Int {
-        case image
-        case description
+    enum ProductSectionType: Int, CaseIterable {
+        case content
         case comment
     }
     
+    enum ContentCellType {
+        case image(FeedDetailImage)
+        case title(FeedDetailTitle)
+        case description(FeedDetailDescription)
+        case info(FeedDetailInfo)
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
-        return titleList.count
+        return ProductSectionType.allCases.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if section == ProductSectionType.image.rawValue {
-            return 1
-        } else if section == ProductSectionType.description.rawValue {
-            return 1
+        if section == ProductSectionType.content.rawValue {
+            return cells.count
         }
         return dummyList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell: UITableViewCell? = nil
-        if indexPath.section ==  ProductSectionType.image.rawValue {
-            let cell_ = tableView.dequeueReusableCell(withIdentifier: FeedDetailImageCell.reuseID, for: indexPath) as! FeedDetailImageCell
-            cell = cell_
-        } else if indexPath.section == ProductSectionType.description.rawValue {
-            let cell_ = tableView.dequeueReusableCell(withIdentifier: ProductDescriptionCell.reuseID, for: indexPath) as! ProductDescriptionCell
-            cell = cell_
+        var dequeuedCell: UITableViewCell?
+        if indexPath.section == ProductSectionType.content.rawValue {
+            let cellModel = cells[indexPath.row]
+            switch cellModel {
+            case .image(let image):
+                let cell = tableView.dequeueReusableCell(withIdentifier: FeedDetailImageCell.reuseID, for: indexPath) as! FeedDetailImageCell
+                cell.configure(image: image)
+                dequeuedCell = cell
+            case .title(let title):
+                let cell = tableView.dequeueReusableCell(withIdentifier: FeedDetailTitleCell.reuseID, for: indexPath) as! FeedDetailTitleCell
+                cell.configure(title: title)
+                dequeuedCell = cell
+            case .description(let description):
+                let cell = tableView.dequeueReusableCell(withIdentifier: FeedDetailDescriptionCell.reuseID, for: indexPath) as! FeedDetailDescriptionCell
+                // TODO: configure
+                dequeuedCell = cell
+            case .info(let info):
+                let cell = tableView.dequeueReusableCell(withIdentifier: FeedDetailInfoCell.reuseID, for: indexPath) as! FeedDetailInfoCell
+                // TODO: configure
+                dequeuedCell = cell
+            }
         } else {
-            let cell_ = tableView.dequeueReusableCell(withIdentifier: CommentCell.reuseID, for: indexPath) as! CommentCell
-            cell_.entity(item: dummyList[indexPath.row])
-            
-            //                cell_.divider(true)
-            //                if indexPath.row == dummyList.count - 1 {
-            //                    cell_.divider(false)
-            //                }
-            
-            cell = cell_
+            let cell = tableView.dequeueReusableCell(withIdentifier: CommentCell.reuseID, for: indexPath) as! CommentCell
+            cell.entity(item: dummyList[indexPath.row])
+            dequeuedCell = cell
         }
         
-        return cell!
+        return dequeuedCell ?? UITableViewCell()
     }
 }
 
@@ -122,24 +142,32 @@ extension FeedDetailViewController: UITableViewDelegate {
     
 }
 
-
-//protocol ProductViewModelItem {
-//    var type: ProductSectionType { get }
-//    var sectionTitle: String { get }
-//    var rowCount: Int { get }
-//}
-//
-//class ProductViewModel {
-//    var items: [ProductViewModelItem] = []
-//    var reloadSections: ((_ section: Int) -> Void)?
-//
-//    init() {
-//
-//    }
-//}
-
 struct DummyComment {
     let name: String
     let comment: String
     let date: String = "19/10/19 5:00"
+}
+
+// MARK: - FeedDetailItem Model
+
+protocol FeedDetailItem { }
+
+struct FeedDetailImage: FeedDetailItem {
+    let imageName: String
+}
+
+struct FeedDetailTitle: FeedDetailItem {
+    let title: String
+}
+
+struct FeedDetailDescription: FeedDetailItem {
+    let description: String
+}
+
+struct FeedDetailInfo: FeedDetailItem {
+    let remainingTime: String
+    let participant: String
+    let place: String
+    let previousPrice: String
+    let currentPrice: String
 }
