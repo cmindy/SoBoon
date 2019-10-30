@@ -34,7 +34,7 @@ class GeneralNavigationView: BaseCustomView {
     }
     
     func initTopView() {
-        self.titleLabel.font = UIFont.notoSansFont(ofSize: 14.0, weight: .bold)
+        self.titleLabel.font = UIFont.notoSansFont(ofSize: 18.0, weight: .bold)
         self.titleLabel.textColor = kGRAY_800
         self.titleLabel.textAlignment = .center
         self.titleLabel.text = nil

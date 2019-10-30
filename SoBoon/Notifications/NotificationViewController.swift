@@ -19,7 +19,7 @@ class NotificationViewController: BaseViewController {
     // MARK: - Life Cycle
     
     func initVars() {
-        self.isShowBigTitle = true
+        self.isShowBigTitle = false
     }
     
     func initBackgroundView() {
@@ -30,8 +30,9 @@ class NotificationViewController: BaseViewController {
         self.navigationView.showBigTitle(bigTitle: self.isShowBigTitle)
         self.navigationView.bgColor(kWHITE)
         self.navigationView.titleColor(kGRAY_800)
-        self.navigationView.title("Notification")
+        self.navigationView.title("알림")
         self.navigationView.divider(false)
+        self.setInteractiveRecognizer()
     }
     
     override func viewDidLoad() {
