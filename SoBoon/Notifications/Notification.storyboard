@@ -15,6 +15,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="DDB-pa-OPs">
+                                <rect key="frame" x="0.0" y="44" width="414" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tr4-Nm-x7N" customClass="GeneralNavigationView" customModule="SoBoon" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44" width="414" height="100"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -25,14 +29,19 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="DDB-pa-OPs" firstAttribute="leading" secondItem="7sZ-ho-LYx" secondAttribute="leading" id="1PR-h1-kpa"/>
                             <constraint firstItem="tr4-Nm-x7N" firstAttribute="leading" secondItem="7sZ-ho-LYx" secondAttribute="leading" id="FLx-u5-ahM"/>
+                            <constraint firstItem="DDB-pa-OPs" firstAttribute="top" secondItem="7sZ-ho-LYx" secondAttribute="top" id="HDD-dU-OTZ"/>
+                            <constraint firstItem="7sZ-ho-LYx" firstAttribute="trailing" secondItem="DDB-pa-OPs" secondAttribute="trailing" id="REs-3m-RAs"/>
                             <constraint firstItem="7sZ-ho-LYx" firstAttribute="trailing" secondItem="tr4-Nm-x7N" secondAttribute="trailing" id="ZzF-pN-044"/>
+                            <constraint firstAttribute="bottom" secondItem="DDB-pa-OPs" secondAttribute="bottom" id="aBe-FG-S6k"/>
                             <constraint firstItem="tr4-Nm-x7N" firstAttribute="top" secondItem="7sZ-ho-LYx" secondAttribute="top" id="emR-ER-fPY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7sZ-ho-LYx"/>
                     </view>
                     <connections>
                         <outlet property="navigationView" destination="tr4-Nm-x7N" id="lZm-CE-DIe"/>
+                        <outlet property="notificationTableView" destination="DDB-pa-OPs" id="jhu-sB-KRJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mFx-Dg-o7B" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

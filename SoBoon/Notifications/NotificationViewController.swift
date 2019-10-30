@@ -14,6 +14,7 @@ class NotificationViewController: BaseViewController {
     // MARK: - Vars
     
     @IBOutlet weak var navigationView: GeneralNavigationView!
+    @IBOutlet weak var notificationTableView: UITableView!
 
     // MARK: - Life Cycle
     
@@ -30,7 +31,6 @@ class NotificationViewController: BaseViewController {
         self.navigationView.bgColor(kWHITE)
         self.navigationView.titleColor(kGRAY_800)
         self.navigationView.title("Notification")
-        self.navigationView.bigTitle("Notification")
         self.navigationView.divider(false)
     }
     
