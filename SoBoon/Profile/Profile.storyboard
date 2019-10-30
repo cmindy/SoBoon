@@ -16,23 +16,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fYn-xq-bYq" customClass="GeneralNavigationView" customModule="SoBoon" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44" width="414" height="100"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="tVw-qJ-bSg"/>
+                                    <constraint firstAttribute="height" constant="44" id="tVw-qJ-bSg"/>
                                 </constraints>
                             </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="vHc-xT-f30">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="fYn-xq-bYq" firstAttribute="top" secondItem="RYc-o0-Rhb" secondAttribute="top" id="Fjh-9B-HBi"/>
+                            <constraint firstItem="RYc-o0-Rhb" firstAttribute="trailing" secondItem="vHc-xT-f30" secondAttribute="trailing" id="GEi-vg-NRr"/>
+                            <constraint firstItem="vHc-xT-f30" firstAttribute="leading" secondItem="RYc-o0-Rhb" secondAttribute="leading" id="GwC-vF-HKt"/>
                             <constraint firstItem="fYn-xq-bYq" firstAttribute="leading" secondItem="RYc-o0-Rhb" secondAttribute="leading" id="J8u-cR-nVS"/>
+                            <constraint firstItem="vHc-xT-f30" firstAttribute="top" secondItem="fYn-xq-bYq" secondAttribute="bottom" id="e68-fZ-gh2"/>
                             <constraint firstItem="RYc-o0-Rhb" firstAttribute="trailing" secondItem="fYn-xq-bYq" secondAttribute="trailing" id="iMI-Gq-psJ"/>
+                            <constraint firstAttribute="bottom" secondItem="vHc-xT-f30" secondAttribute="bottom" id="rKo-Ny-9rk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="RYc-o0-Rhb"/>
                     </view>
                     <connections>
                         <outlet property="navigationView" destination="fYn-xq-bYq" id="yxB-mi-PMx"/>
+                        <outlet property="profileTableView" destination="vHc-xT-f30" id="svK-U4-x68"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dac-UK-TB8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
