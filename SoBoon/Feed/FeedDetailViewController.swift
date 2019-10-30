@@ -13,7 +13,7 @@ class FeedDetailViewController: BaseViewController {
     // MARK: - Vars
     
     @IBOutlet weak var navigationView: GeneralNavigationView!
-    @IBOutlet weak var productTableView: UITableView!
+    @IBOutlet weak var feedDetailTableView: UITableView!
     
     private let titleList = ["", "", "댓글"]
     private let dummyList = [DummyComment(name: "황희희", comment: "혹시 후문에서 쿨거래는 안될까요? ㅎㅎ"),
@@ -45,28 +45,28 @@ class FeedDetailViewController: BaseViewController {
     
     private func initTableView() {
         let imageCell = UINib(nibName: FeedDetailImageCell.reuseID, bundle: nil)
-        productTableView.register(imageCell, forCellReuseIdentifier: FeedDetailImageCell.reuseID)
+        feedDetailTableView.register(imageCell, forCellReuseIdentifier: FeedDetailImageCell.reuseID)
         
         let titleCell = UINib(nibName: FeedDetailTitleCell.reuseID, bundle: nil)
-        productTableView.register(titleCell, forCellReuseIdentifier: FeedDetailTitleCell.reuseID)
+        feedDetailTableView.register(titleCell, forCellReuseIdentifier: FeedDetailTitleCell.reuseID)
         
         let descriptionCell = UINib(nibName: FeedDetailDescriptionCell.reuseID, bundle: nil)
-        productTableView.register(descriptionCell, forCellReuseIdentifier: FeedDetailDescriptionCell.reuseID)
+        feedDetailTableView.register(descriptionCell, forCellReuseIdentifier: FeedDetailDescriptionCell.reuseID)
         
         let infoCell = UINib(nibName: FeedDetailInfoCell.reuseID, bundle: nil)
-        productTableView.register(infoCell, forCellReuseIdentifier: FeedDetailInfoCell.reuseID)
+        feedDetailTableView.register(infoCell, forCellReuseIdentifier: FeedDetailInfoCell.reuseID)
         
         let commentCell = UINib(nibName: CommentCell.reuseID, bundle: nil)
-        productTableView.register(commentCell, forCellReuseIdentifier: CommentCell.reuseID)
+        feedDetailTableView.register(commentCell, forCellReuseIdentifier: CommentCell.reuseID)
         
-        productTableView.delegate = self
-        productTableView.dataSource = self
+        feedDetailTableView.delegate = self
+        feedDetailTableView.dataSource = self
         
-        productTableView.backgroundColor = kWHITE
-        productTableView.rowHeight = UITableView.automaticDimension
-        productTableView.estimatedRowHeight = 200.0
-        productTableView.showsVerticalScrollIndicator = false
-        productTableView.separatorStyle = .none
+        feedDetailTableView.backgroundColor = kWHITE
+        feedDetailTableView.rowHeight = UITableView.automaticDimension
+        feedDetailTableView.estimatedRowHeight = 200.0
+        feedDetailTableView.showsVerticalScrollIndicator = false
+        feedDetailTableView.separatorStyle = .none
     }
     
     override func viewDidLoad() {
@@ -83,7 +83,7 @@ class FeedDetailViewController: BaseViewController {
 
 extension FeedDetailViewController: UITableViewDataSource {
     
-    enum ProductSectionType: Int, CaseIterable {
+    enum FeedDetailSectionType: Int, CaseIterable {
         case content
         case comment
     }
@@ -96,11 +96,11 @@ extension FeedDetailViewController: UITableViewDataSource {
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return ProductSectionType.allCases.count
+        return FeedDetailSectionType.allCases.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if section == ProductSectionType.content.rawValue {
+        if section == FeedDetailSectionType.content.rawValue {
             return cells.count
         }
         return dummyList.count
@@ -108,7 +108,7 @@ extension FeedDetailViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var dequeuedCell: UITableViewCell?
-        if indexPath.section == ProductSectionType.content.rawValue {
+        if indexPath.section == FeedDetailSectionType.content.rawValue {
             let cellModel = cells[indexPath.row]
             switch cellModel {
             case .image(let image):

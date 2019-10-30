@@ -1,5 +1,5 @@
 //
-//  ProductImageCell.swift
+//  FeedDetailImageCell.swift
 //  SoBoon
 //
 //  Created by CHOMINJI on 26/10/2019.

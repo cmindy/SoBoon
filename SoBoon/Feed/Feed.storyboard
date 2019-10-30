@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,26 +11,26 @@
             <objects>
                 <viewController storyboardIdentifier="FeedViewController" id="GqJ-i7-ter" customClass="FeedViewController" customModule="SoBoon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eyl-I0-Tp8">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="5Zw-zI-TZK">
-                                <rect key="frame" x="0.0" y="184" width="414" height="712"/>
+                                <rect key="frame" x="0.0" y="140" width="600" height="460"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vu3-wA-QFQ">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="184"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="140"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3LZ-Rk-GkS" customClass="FeedNavigationView" customModule="SoBoon" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44" width="414" height="140"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="140"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="140" id="gu3-Hn-vTa"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fd3-VZ-D7L" customClass="FeedSearchView" customModule="SoBoon" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="159" width="414" height="50"/>
+                                <rect key="frame" x="0.0" y="115" width="600" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="4tV-jc-rd3"/>
                                 </constraints>
@@ -77,22 +76,22 @@
             <objects>
                 <viewController storyboardIdentifier="FeedDetailViewController" id="maa-25-H5p" customClass="FeedDetailViewController" customModule="SoBoon" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YgH-qN-feZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yQn-b3-5tm">
-                                <rect key="frame" x="0.0" y="96" width="414" height="716"/>
+                                <rect key="frame" x="0.0" y="52" width="600" height="464"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UQv-Sw-Nhs">
-                                <rect key="frame" x="0.0" y="812" width="414" height="84"/>
+                                <rect key="frame" x="0.0" y="516" width="600" height="84"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="84" id="ixi-1u-u4Z"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cSu-bc-GYY" customClass="GeneralNavigationView" customModule="SoBoon" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="44" id="cCl-ny-A7T"/>
@@ -115,8 +114,8 @@
                         <viewLayoutGuide key="safeArea" id="J2x-ha-1qW"/>
                     </view>
                     <connections>
+                        <outlet property="feedDetailTableView" destination="yQn-b3-5tm" id="7tt-AJ-aFg"/>
                         <outlet property="navigationView" destination="cSu-bc-GYY" id="wAa-OV-vlV"/>
-                        <outlet property="productTableView" destination="yQn-b3-5tm" id="7tt-AJ-aFg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NAs-bP-6kR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
