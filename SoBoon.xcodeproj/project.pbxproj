@@ -50,6 +50,8 @@
 		FA85ECEE234B146300C6EBF4 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85ECED234B146300C6EBF4 /* NotificationViewController.swift */; };
 		FA863D922368B399007109E6 /* FeedDetailInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA863D902368B399007109E6 /* FeedDetailInfoCell.swift */; };
 		FA863D932368B399007109E6 /* FeedDetailInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA863D912368B399007109E6 /* FeedDetailInfoCell.xib */; };
+		FA863D97236980B3007109E6 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA863D95236980B3007109E6 /* NotificationCell.swift */; };
+		FA863D98236980B3007109E6 /* NotificationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA863D96236980B3007109E6 /* NotificationCell.xib */; };
 		FA896A6E2360BF9800ED6597 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA896A6C2360BF9800ED6597 /* CommentCell.swift */; };
 		FA896A6F2360BF9800ED6597 /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA896A6D2360BF9800ED6597 /* CommentCell.xib */; };
 		FA90062A235A1A7500E517B4 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA900629235A1A7500E517B4 /* FeedViewController.swift */; };
@@ -119,6 +121,8 @@
 		FA85ECED234B146300C6EBF4 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		FA863D902368B399007109E6 /* FeedDetailInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailInfoCell.swift; sourceTree = "<group>"; };
 		FA863D912368B399007109E6 /* FeedDetailInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedDetailInfoCell.xib; sourceTree = "<group>"; };
+		FA863D95236980B3007109E6 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
+		FA863D96236980B3007109E6 /* NotificationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NotificationCell.xib; sourceTree = "<group>"; };
 		FA896A6C2360BF9800ED6597 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		FA896A6D2360BF9800ED6597 /* CommentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
 		FA900629235A1A7500E517B4 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -279,6 +283,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		FA863D942369808C007109E6 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				FA863D95236980B3007109E6 /* NotificationCell.swift */,
+				FA863D96236980B3007109E6 /* NotificationCell.xib */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
 		FAB6C6AA23519B3A00572B74 /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -315,6 +328,7 @@
 			isa = PBXGroup;
 			children = (
 				FA7EAFAE2355F36400757B11 /* Feed */,
+				FA863D942369808C007109E6 /* Notification */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -463,6 +477,7 @@
 				FA051F28235C430D00A01418 /* FeedSearchView.xib in Resources */,
 				FA051F1A235C3A7D00A01418 /* FeedCategoryListCell.xib in Resources */,
 				FA051F2C235C4F6C00A01418 /* FeedTitleHeaderView.xib in Resources */,
+				FA863D98236980B3007109E6 /* NotificationCell.xib in Resources */,
 				FA863D932368B399007109E6 /* FeedDetailInfoCell.xib in Resources */,
 				FA7EAFC22355F72200757B11 /* Profile.storyboard in Resources */,
 				FA051F20235C3C7B00A01418 /* FeedCategoryCell.xib in Resources */,
@@ -504,6 +519,7 @@
 				FA85ECEE234B146300C6EBF4 /* NotificationViewController.swift in Sources */,
 				FAE9BA7B23634078008BE3E4 /* FeedDetailViewController.swift in Sources */,
 				FA051F15235C33AD00A01418 /* FeedListCell.swift in Sources */,
+				FA863D97236980B3007109E6 /* NotificationCell.swift in Sources */,
 				FA7EAFC42355F72900757B11 /* ProfileViewController.swift in Sources */,
 				FA7EAF9D2355F08100757B11 /* Constants.swift in Sources */,
 				FAB6C6B323519B7E00572B74 /* BaseViewController.swift in Sources */,
