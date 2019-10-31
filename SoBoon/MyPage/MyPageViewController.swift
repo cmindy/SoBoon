@@ -1,5 +1,5 @@
 //
-//  ProfileViewController.swift
+//  MyPageViewController.swift
 //  SoBoon
 //
 //  Created by CHOMINJI on 15/10/2019.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ProfileViewController: BaseViewController {
+class MyPageViewController: BaseViewController {
 
     // MARK: - Vars
     
@@ -27,7 +27,7 @@ class ProfileViewController: BaseViewController {
 
 // MARK: - Attributes
 
-extension ProfileViewController {
+extension MyPageViewController {
     private func initAttributes() {
         self.initVars()
         self.initBackgroundView()

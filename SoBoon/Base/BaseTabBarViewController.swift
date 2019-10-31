@@ -81,9 +81,9 @@ class BaseTabBarViewController: UITabBarController {
                 storyBoard = "Notification"
                 controller = "NotificationViewController"
             }
-            else if tabItem.type == .profile {
-                storyBoard = "Profile"
-                controller = "ProfileViewController"
+            else if tabItem.type == .mypage {
+                storyBoard = "MyPage"
+                controller = "MyPageViewController"
             }
 
             if let storyBoard = storyBoard,

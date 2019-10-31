@@ -41,8 +41,8 @@
 		FA7EAFB92355F3EF00757B11 /* FloatingTabbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7EAFB72355F3EF00757B11 /* FloatingTabbar.swift */; };
 		FA7EAFBA2355F3EF00757B11 /* FloatingTabbar.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA7EAFB82355F3EF00757B11 /* FloatingTabbar.xib */; };
 		FA7EAFBE2355F6F600757B11 /* Notification.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7EAFBD2355F6F600757B11 /* Notification.storyboard */; };
-		FA7EAFC22355F72200757B11 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7EAFC12355F72200757B11 /* Profile.storyboard */; };
-		FA7EAFC42355F72900757B11 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7EAFC32355F72900757B11 /* ProfileViewController.swift */; };
+		FA7EAFC22355F72200757B11 /* MyPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7EAFC12355F72200757B11 /* MyPage.storyboard */; };
+		FA7EAFC42355F72900757B11 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7EAFC32355F72900757B11 /* MyPageViewController.swift */; };
 		FA85ECC7234A5E7C00C6EBF4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85ECC6234A5E7C00C6EBF4 /* AppDelegate.swift */; };
 		FA85ECCE234A5E7C00C6EBF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA85ECCC234A5E7C00C6EBF4 /* Main.storyboard */; };
 		FA85ECD0234A5E7F00C6EBF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA85ECCF234A5E7F00C6EBF4 /* Assets.xcassets */; };
@@ -110,8 +110,8 @@
 		FA7EAFB72355F3EF00757B11 /* FloatingTabbar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingTabbar.swift; sourceTree = "<group>"; };
 		FA7EAFB82355F3EF00757B11 /* FloatingTabbar.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FloatingTabbar.xib; sourceTree = "<group>"; };
 		FA7EAFBD2355F6F600757B11 /* Notification.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notification.storyboard; sourceTree = "<group>"; };
-		FA7EAFC12355F72200757B11 /* Profile.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Profile.storyboard; sourceTree = "<group>"; };
-		FA7EAFC32355F72900757B11 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		FA7EAFC12355F72200757B11 /* MyPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPage.storyboard; sourceTree = "<group>"; };
+		FA7EAFC32355F72900757B11 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		FA85ECC3234A5E7C00C6EBF4 /* SoBoon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoBoon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA85ECC6234A5E7C00C6EBF4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA85ECCD234A5E7C00C6EBF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -174,6 +174,13 @@
 			path = Detail;
 			sourceTree = "<group>";
 		};
+		FA19B37C236B022500A54CE7 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
 		FA7EAFA42355F0F100757B11 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
@@ -228,13 +235,13 @@
 			path = Feed;
 			sourceTree = "<group>";
 		};
-		FA7EAFC02355F71600757B11 /* Profile */ = {
+		FA7EAFC02355F71600757B11 /* MyPage */ = {
 			isa = PBXGroup;
 			children = (
-				FA7EAFC12355F72200757B11 /* Profile.storyboard */,
-				FA7EAFC32355F72900757B11 /* ProfileViewController.swift */,
+				FA7EAFC12355F72200757B11 /* MyPage.storyboard */,
+				FA7EAFC32355F72900757B11 /* MyPageViewController.swift */,
 			);
-			path = Profile;
+			path = MyPage;
 			sourceTree = "<group>";
 		};
 		FA85ECBA234A5E7C00C6EBF4 = {
@@ -265,7 +272,7 @@
 				FA7EAFA42355F0F100757B11 /* Splash */,
 				FAB6C6AF23519B5300572B74 /* Feed */,
 				FAB6C6B023519B5700572B74 /* Notifications */,
-				FA7EAFC02355F71600757B11 /* Profile */,
+				FA7EAFC02355F71600757B11 /* MyPage */,
 				FA85ECEC234B144800C6EBF4 /* View */,
 				FA85ECCC234A5E7C00C6EBF4 /* Main.storyboard */,
 				FAB6C6B123519B7500572B74 /* Base */,
@@ -290,6 +297,13 @@
 				FA863D96236980B3007109E6 /* NotificationCell.xib */,
 			);
 			path = Notification;
+			sourceTree = "<group>";
+		};
+		FA863D9923699824007109E6 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
 			sourceTree = "<group>";
 		};
 		FAB6C6AA23519B3A00572B74 /* Common */ = {
@@ -320,6 +334,7 @@
 				FA7EAFAF2355F37300757B11 /* General */,
 				FA7EAFB12355F38600757B11 /* Tabbar */,
 				FA7EAFB22355F39400757B11 /* Feed */,
+				FA19B37C236B022500A54CE7 /* MyPage */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -329,6 +344,7 @@
 			children = (
 				FA7EAFAE2355F36400757B11 /* Feed */,
 				FA863D942369808C007109E6 /* Notification */,
+				FA863D9923699824007109E6 /* Profile */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -479,7 +495,7 @@
 				FA051F2C235C4F6C00A01418 /* FeedTitleHeaderView.xib in Resources */,
 				FA863D98236980B3007109E6 /* NotificationCell.xib in Resources */,
 				FA863D932368B399007109E6 /* FeedDetailInfoCell.xib in Resources */,
-				FA7EAFC22355F72200757B11 /* Profile.storyboard in Resources */,
+				FA7EAFC22355F72200757B11 /* MyPage.storyboard in Resources */,
 				FA051F20235C3C7B00A01418 /* FeedCategoryCell.xib in Resources */,
 				FAC8B19C23686B2D0026C2C7 /* NotoSansCJKkr-Regular.otf in Resources */,
 				FA7EAFBE2355F6F600757B11 /* Notification.storyboard in Resources */,
@@ -520,7 +536,7 @@
 				FAE9BA7B23634078008BE3E4 /* FeedDetailViewController.swift in Sources */,
 				FA051F15235C33AD00A01418 /* FeedListCell.swift in Sources */,
 				FA863D97236980B3007109E6 /* NotificationCell.swift in Sources */,
-				FA7EAFC42355F72900757B11 /* ProfileViewController.swift in Sources */,
+				FA7EAFC42355F72900757B11 /* MyPageViewController.swift in Sources */,
 				FA7EAF9D2355F08100757B11 /* Constants.swift in Sources */,
 				FAB6C6B323519B7E00572B74 /* BaseViewController.swift in Sources */,
 				FAE9BA8023635CB4008BE3E4 /* FeedDetailImageCell.swift in Sources */,

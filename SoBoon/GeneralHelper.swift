@@ -36,9 +36,9 @@ extension GeneralHelper {
         let homeItem = TabItem(title: "Feed", iconImage: "icon_home", type: .feed)
         let postItem = TabItem(title: "Post", iconImage: "icon_post", type: .post)
         let notiItem = TabItem(title: "Notifiication", iconImage: "icon_notification", type: .notification)
-        let profileItem = TabItem(title: "Profile", iconImage: "icon_profile", type: .profile)
+        let mypageItem = TabItem(title: "MyPage", iconImage: "icon_profile", type: .mypage)
         
-        self.tabList = [homeItem, postItem, notiItem, profileItem]
+        self.tabList = [homeItem, postItem, notiItem, mypageItem]
     }
     
 }

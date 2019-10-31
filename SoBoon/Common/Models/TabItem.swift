@@ -12,7 +12,7 @@ enum TabType: Int {
     case feed
     case post
     case notification
-    case profile
+    case mypage
 }
 
 struct TabItem {
