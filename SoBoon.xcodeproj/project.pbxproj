@@ -27,6 +27,7 @@
 		FA0A8C1C234C8AE300C469BC /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0A8C1B234C8AE300C469BC /* UIView+Extension.swift */; };
 		FA19B383236B40AA00A54CE7 /* MyPageLikeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA19B381236B40AA00A54CE7 /* MyPageLikeCell.swift */; };
 		FA19B384236B40AA00A54CE7 /* MyPageLikeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA19B382236B40AA00A54CE7 /* MyPageLikeCell.xib */; };
+		FA19B386236B475200A54CE7 /* MyPageLikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA19B385236B475200A54CE7 /* MyPageLikeViewController.swift */; };
 		FA48C8D0235633FA004FB593 /* GeneralNavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA48C8CF235633FA004FB593 /* GeneralNavigationView.xib */; };
 		FA48C8D22356340F004FB593 /* GeneralNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA48C8D12356340F004FB593 /* GeneralNavigationView.swift */; };
 		FA6D4824234CB315007E0991 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6D4823234CB315007E0991 /* PostViewController.swift */; };
@@ -98,6 +99,7 @@
 		FA0A8C1B234C8AE300C469BC /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		FA19B381236B40AA00A54CE7 /* MyPageLikeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageLikeCell.swift; sourceTree = "<group>"; };
 		FA19B382236B40AA00A54CE7 /* MyPageLikeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPageLikeCell.xib; sourceTree = "<group>"; };
+		FA19B385236B475200A54CE7 /* MyPageLikeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageLikeViewController.swift; sourceTree = "<group>"; };
 		FA48C8CF235633FA004FB593 /* GeneralNavigationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeneralNavigationView.xib; sourceTree = "<group>"; };
 		FA48C8D12356340F004FB593 /* GeneralNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralNavigationView.swift; sourceTree = "<group>"; };
 		FA6D4823234CB315007E0991 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 			children = (
 				FA7EAFC12355F72200757B11 /* MyPage.storyboard */,
 				FA7EAFC32355F72900757B11 /* MyPageViewController.swift */,
+				FA19B385236B475200A54CE7 /* MyPageLikeViewController.swift */,
 			);
 			path = MyPage;
 			sourceTree = "<group>";
@@ -531,6 +534,7 @@
 				FA051F22235C411700A01418 /* FeedNavigationView.swift in Sources */,
 				FA7EAFA12355F0D800757B11 /* SplashViewController.swift in Sources */,
 				FA0A8C1C234C8AE300C469BC /* UIView+Extension.swift in Sources */,
+				FA19B386236B475200A54CE7 /* MyPageLikeViewController.swift in Sources */,
 				FA85ECEE234B146300C6EBF4 /* NotificationViewController.swift in Sources */,
 				FAE9BA7B23634078008BE3E4 /* FeedDetailViewController.swift in Sources */,
 				FA051F15235C33AD00A01418 /* FeedListCell.swift in Sources */,
