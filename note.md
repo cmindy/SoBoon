@@ -130,7 +130,7 @@
                     print("== \(names)")
                 }
             }
-    
+      
     ////
     Noto Sans CJK KR
     == NotoSansCJKkr-Black
@@ -172,5 +172,40 @@
 
   - 
 
+- collectionView flow layout 
+
+  - collection View도 테이블 뷰처럼 automaticDimension 과 비슷한게 있는지 궁금
+
+  - `flowLayout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize` 이런 것이 있다.
+
+  - 헤더 뷰의 높이는 이런식으로 selfsizing 될 수 있도록 설정해줬다. 
+
+  - [스택오버플로우](https://stackoverflow.com/questions/39825290/uicollectionview-header-dynamic-height-using-auto-layout) 에서 Pim의 답변을 참고했다.
+
+  - ```swift
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+            let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: MyPageLikeHeaderView.reuseID, for: indexPath) as! MyPageLikeHeaderView
+            return header
+        }
+    ```
+
+  - 아이폰 se에서도 확인해보고 싶은데 엑스코드 업데이트 했더니 시뮬레이터가 사라짐... 
+
+  - 아이폰8에서는 예쁘게 나왔었다.
+
+- 
 
 
+
+
+
+
+
+----
+
+TODO
+
+- notification 선택시 색깔 변경
+- 피드디테일 레이아웃 수정
+- 네비게이션 버튼 액션 추가
+- 
