@@ -25,6 +25,8 @@
 		FA051F602360B0DE00A01418 /* ProductDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA051F5E2360B0DE00A01418 /* ProductDescriptionCell.swift */; };
 		FA051F612360B0DE00A01418 /* ProductDescriptionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA051F5F2360B0DE00A01418 /* ProductDescriptionCell.xib */; };
 		FA0A8C1C234C8AE300C469BC /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0A8C1B234C8AE300C469BC /* UIView+Extension.swift */; };
+		FA19B383236B40AA00A54CE7 /* MyPageLikeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA19B381236B40AA00A54CE7 /* MyPageLikeCell.swift */; };
+		FA19B384236B40AA00A54CE7 /* MyPageLikeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA19B382236B40AA00A54CE7 /* MyPageLikeCell.xib */; };
 		FA48C8D0235633FA004FB593 /* GeneralNavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA48C8CF235633FA004FB593 /* GeneralNavigationView.xib */; };
 		FA48C8D22356340F004FB593 /* GeneralNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA48C8D12356340F004FB593 /* GeneralNavigationView.swift */; };
 		FA6D4824234CB315007E0991 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6D4823234CB315007E0991 /* PostViewController.swift */; };
@@ -94,6 +96,8 @@
 		FA051F5E2360B0DE00A01418 /* ProductDescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDescriptionCell.swift; sourceTree = "<group>"; };
 		FA051F5F2360B0DE00A01418 /* ProductDescriptionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductDescriptionCell.xib; sourceTree = "<group>"; };
 		FA0A8C1B234C8AE300C469BC /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		FA19B381236B40AA00A54CE7 /* MyPageLikeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageLikeCell.swift; sourceTree = "<group>"; };
+		FA19B382236B40AA00A54CE7 /* MyPageLikeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPageLikeCell.xib; sourceTree = "<group>"; };
 		FA48C8CF235633FA004FB593 /* GeneralNavigationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeneralNavigationView.xib; sourceTree = "<group>"; };
 		FA48C8D12356340F004FB593 /* GeneralNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralNavigationView.swift; sourceTree = "<group>"; };
 		FA6D4823234CB315007E0991 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
@@ -172,13 +176,6 @@
 				FA051F5F2360B0DE00A01418 /* ProductDescriptionCell.xib */,
 			);
 			path = Detail;
-			sourceTree = "<group>";
-		};
-		FA19B37C236B022500A54CE7 /* MyPage */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = MyPage;
 			sourceTree = "<group>";
 		};
 		FA7EAFA42355F0F100757B11 /* Splash */ = {
@@ -299,11 +296,13 @@
 			path = Notification;
 			sourceTree = "<group>";
 		};
-		FA863D9923699824007109E6 /* Profile */ = {
+		FA863D9923699824007109E6 /* MyPage */ = {
 			isa = PBXGroup;
 			children = (
+				FA19B381236B40AA00A54CE7 /* MyPageLikeCell.swift */,
+				FA19B382236B40AA00A54CE7 /* MyPageLikeCell.xib */,
 			);
-			path = Profile;
+			path = MyPage;
 			sourceTree = "<group>";
 		};
 		FAB6C6AA23519B3A00572B74 /* Common */ = {
@@ -334,7 +333,6 @@
 				FA7EAFAF2355F37300757B11 /* General */,
 				FA7EAFB12355F38600757B11 /* Tabbar */,
 				FA7EAFB22355F39400757B11 /* Feed */,
-				FA19B37C236B022500A54CE7 /* MyPage */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -344,7 +342,7 @@
 			children = (
 				FA7EAFAE2355F36400757B11 /* Feed */,
 				FA863D942369808C007109E6 /* Notification */,
-				FA863D9923699824007109E6 /* Profile */,
+				FA863D9923699824007109E6 /* MyPage */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -492,6 +490,7 @@
 				FAC8B19B23686B2D0026C2C7 /* NotoSansCJKkr-Light.otf in Resources */,
 				FA051F28235C430D00A01418 /* FeedSearchView.xib in Resources */,
 				FA051F1A235C3A7D00A01418 /* FeedCategoryListCell.xib in Resources */,
+				FA19B384236B40AA00A54CE7 /* MyPageLikeCell.xib in Resources */,
 				FA051F2C235C4F6C00A01418 /* FeedTitleHeaderView.xib in Resources */,
 				FA863D98236980B3007109E6 /* NotificationCell.xib in Resources */,
 				FA863D932368B399007109E6 /* FeedDetailInfoCell.xib in Resources */,
@@ -549,6 +548,7 @@
 				FA7EAFA92355F17100757B11 /* BaseTabBarViewController.swift in Sources */,
 				FA85ECC7234A5E7C00C6EBF4 /* AppDelegate.swift in Sources */,
 				FA051F19235C3A7D00A01418 /* FeedCategoryListCell.swift in Sources */,
+				FA19B383236B40AA00A54CE7 /* MyPageLikeCell.swift in Sources */,
 				FAC8B19E23686F4B0026C2C7 /* UIFont+Custom.swift in Sources */,
 				FA051F1F235C3C7B00A01418 /* FeedCategoryCell.swift in Sources */,
 				FA7EAFB62355F3E700757B11 /* InteractivePopRecognizer.swift in Sources */,

@@ -168,6 +168,8 @@ let kPURPLE_100_HIGHLIGHT =             UIColor.init(red: 233/255, green: 228/25
 let kPURPLE_500 =                       UIColor.init(red: 139/255, green: 104/255, blue: 255/255, alpha: 1.0)
 let kPURPLE_500_HIGHLIGHT =             UIColor.init(red: 129/255, green: 94/255, blue: 245/255, alpha: 1.0)
 
+let kPINK =                             UIColor.init(red: 255/255, green: 46/255, blue: 82/255, alpha: 1.0)
+
 let kPINK_500 =                         UIColor.init(red: 255/255, green: 86/255, blue: 93/255, alpha: 1.0)
 let kPINK_500_HIGHLIGHT =               UIColor.init(red: 245/255, green: 76/255, blue: 83/255, alpha: 1.0)
 let kPINK_500_ALPHA =                   UIColor.init(red: 255/255, green: 86/255, blue: 93/255, alpha: 0.8)
