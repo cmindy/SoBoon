@@ -22,6 +22,7 @@ class MyPageProfileHeaderView: UITableViewHeaderFooterView {
     @IBOutlet weak var myButton: UIButton!
     @IBOutlet weak var participatedButton: UIButton!
     @IBOutlet weak var likeButton: UIButton!
+    @IBOutlet weak var dividerView: UIView!
     
     // MARK: - Life Cycle
     
@@ -41,6 +42,7 @@ extension MyPageProfileHeaderView {
         initProfileView()
         initLabels()
         initButtons()
+        initDividerView()
     }
     
     private func initVars() {
@@ -65,23 +67,16 @@ extension MyPageProfileHeaderView {
         nameLabel.font = UIFont.notoSansFont(ofSize: 18.0, weight: .bold)
         nameLabel.text = "쥬만지"
 
-        let soBoonLabels = [myLabel, likeLabel, likeLabel]
+        let soBoonLabels = [myLabel, participatedLabel, likeLabel]
         soBoonLabels.forEach { label in
               if let label = label {
                   label.font = UIFont.notoSansFont(ofSize: 18.0, weight: .bold)
                   label.textColor = kGRAY
               }
           }
-//        myLabel.font = UIFont.notoSansFont(ofSize: 14.0, weight: .medium)
-//        myLabel.textColor = kGRAY
+        
         myLabel.text = "내 소분"
-
-//        participatedLabel.font = UIFont.notoSansFont(ofSize: 14.0, weight: .medium)
-//        participatedLabel.textColor = kGRAY
         participatedLabel.text = "참여한 소분"
-
-//        likeLabel.font = UIFont.notoSansFont(ofSize: 14.0, weight: .medium)
-//        likeLabel.textColor = kGRAY
         likeLabel.text = "찜한 소분"
     }
     
@@ -95,5 +90,9 @@ extension MyPageProfileHeaderView {
                 button.setTitleColor(kPINK, for: .normal)
             }
         }
+    }
+    
+    private func initDividerView() {
+        dividerView.backgroundColor = kGRAY_100
     }
 }

@@ -129,12 +129,6 @@
                                 <constraint firstItem="ony-Id-wdZ" firstAttribute="leading" secondItem="uo2-qV-zJg" secondAttribute="leading" id="Ut3-8s-7fo"/>
                             </constraints>
                         </view>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="z13-Vh-rzX">
-                            <rect key="frame" x="0.0" y="215" width="414" height="5"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="5" id="6wV-h3-R7L"/>
-                            </constraints>
-                        </imageView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="doZ-aK-hU9">
                             <rect key="frame" x="0.0" y="0.0" width="414" height="119"/>
                             <subviews>
@@ -166,20 +160,27 @@
                                 <constraint firstItem="dev-Pf-w5a" firstAttribute="centerX" secondItem="doZ-aK-hU9" secondAttribute="centerX" id="qup-89-ApZ"/>
                             </constraints>
                         </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oEJ-Pq-fcI">
+                            <rect key="frame" x="0.0" y="215" width="414" height="5"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="5" id="xbH-Mr-SSJ"/>
+                            </constraints>
+                        </view>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     <constraints>
                         <constraint firstAttribute="trailing" secondItem="uo2-qV-zJg" secondAttribute="trailing" id="3xC-dA-mJS"/>
                         <constraint firstItem="uo2-qV-zJg" firstAttribute="top" secondItem="doZ-aK-hU9" secondAttribute="bottom" constant="20" id="BB7-FS-JS7"/>
                         <constraint firstAttribute="height" constant="220" id="CeU-b2-19I"/>
-                        <constraint firstAttribute="bottom" secondItem="z13-Vh-rzX" secondAttribute="bottom" id="NZ0-Mt-kMe"/>
+                        <constraint firstAttribute="bottom" secondItem="oEJ-Pq-fcI" secondAttribute="bottom" id="HjY-sN-zkZ"/>
+                        <constraint firstItem="oEJ-Pq-fcI" firstAttribute="leading" secondItem="h1k-45-Eaj" secondAttribute="leading" id="Klx-kl-2H7"/>
                         <constraint firstItem="uo2-qV-zJg" firstAttribute="leading" secondItem="h1k-45-Eaj" secondAttribute="leading" id="TH7-zb-jTc"/>
-                        <constraint firstItem="z13-Vh-rzX" firstAttribute="top" secondItem="uo2-qV-zJg" secondAttribute="bottom" constant="20" id="Tai-uu-nJ5"/>
                         <constraint firstItem="doZ-aK-hU9" firstAttribute="leading" secondItem="h1k-45-Eaj" secondAttribute="leading" id="Wt8-po-Emw"/>
-                        <constraint firstAttribute="trailing" secondItem="z13-Vh-rzX" secondAttribute="trailing" id="f1N-pj-8Mf"/>
                         <constraint firstAttribute="trailing" secondItem="doZ-aK-hU9" secondAttribute="trailing" id="hdt-av-anv"/>
+                        <constraint firstAttribute="trailing" secondItem="oEJ-Pq-fcI" secondAttribute="trailing" id="i4D-F6-Hel"/>
                         <constraint firstItem="doZ-aK-hU9" firstAttribute="top" secondItem="h1k-45-Eaj" secondAttribute="top" id="rgY-PD-a0E"/>
-                        <constraint firstItem="z13-Vh-rzX" firstAttribute="leading" secondItem="h1k-45-Eaj" secondAttribute="leading" id="uhk-mJ-MtC"/>
+                        <constraint firstItem="oEJ-Pq-fcI" firstAttribute="top" secondItem="uo2-qV-zJg" secondAttribute="bottom" constant="20" id="tXo-uF-Sl6"/>
                     </constraints>
                 </view>
             </subviews>
@@ -195,6 +196,7 @@
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="baseView" destination="h1k-45-Eaj" id="rQg-hD-h29"/>
+                <outlet property="dividerView" destination="oEJ-Pq-fcI" id="YxN-1X-9cm"/>
                 <outlet property="editButton" destination="0bc-Kb-kGW" id="onW-l1-3OA"/>
                 <outlet property="likeButton" destination="tdo-LL-z7s" id="hq1-nk-ps3"/>
                 <outlet property="likeLabel" destination="LPq-UL-sgu" id="f7P-s4-71i"/>
