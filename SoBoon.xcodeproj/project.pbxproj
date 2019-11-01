@@ -71,6 +71,8 @@
 		FAC8B19E23686F4B0026C2C7 /* UIFont+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC8B19D23686F4B0026C2C7 /* UIFont+Custom.swift */; };
 		FAE0418E236BDDD700C14122 /* MyPageLikeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE0418C236BDDD700C14122 /* MyPageLikeHeaderView.swift */; };
 		FAE0418F236BDDD700C14122 /* MyPageLikeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAE0418D236BDDD700C14122 /* MyPageLikeHeaderView.xib */; };
+		FAE04199236C601600C14122 /* MyPageProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE04198236C601600C14122 /* MyPageProfileHeaderView.swift */; };
+		FAE0419B236C602B00C14122 /* MyPageProfileHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAE0419A236C602B00C14122 /* MyPageProfileHeaderView.xib */; };
 		FAE296AF23687AC800C720BD /* FeedDetailTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE296AD23687AC800C720BD /* FeedDetailTitleCell.swift */; };
 		FAE296B023687AC800C720BD /* FeedDetailTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAE296AE23687AC800C720BD /* FeedDetailTitleCell.xib */; };
 		FAE296B323687D9E00C720BD /* FeedDetailDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE296B123687D9E00C720BD /* FeedDetailDescriptionCell.swift */; };
@@ -147,6 +149,8 @@
 		FAC8B19D23686F4B0026C2C7 /* UIFont+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Custom.swift"; sourceTree = "<group>"; };
 		FAE0418C236BDDD700C14122 /* MyPageLikeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageLikeHeaderView.swift; sourceTree = "<group>"; };
 		FAE0418D236BDDD700C14122 /* MyPageLikeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPageLikeHeaderView.xib; sourceTree = "<group>"; };
+		FAE04198236C601600C14122 /* MyPageProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageProfileHeaderView.swift; sourceTree = "<group>"; };
+		FAE0419A236C602B00C14122 /* MyPageProfileHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPageProfileHeaderView.xib; sourceTree = "<group>"; };
 		FAE296AD23687AC800C720BD /* FeedDetailTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailTitleCell.swift; sourceTree = "<group>"; };
 		FAE296AE23687AC800C720BD /* FeedDetailTitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedDetailTitleCell.xib; sourceTree = "<group>"; };
 		FAE296B123687D9E00C720BD /* FeedDetailDescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailDescriptionCell.swift; sourceTree = "<group>"; };
@@ -277,7 +281,6 @@
 				FAB6C6AF23519B5300572B74 /* Feed */,
 				FAB6C6B023519B5700572B74 /* Notifications */,
 				FA7EAFC02355F71600757B11 /* MyPage */,
-				FA85ECEC234B144800C6EBF4 /* View */,
 				FA85ECCC234A5E7C00C6EBF4 /* Main.storyboard */,
 				FAB6C6B123519B7500572B74 /* Base */,
 				FAC8B18E23686AFE0026C2C7 /* Font */,
@@ -285,13 +288,6 @@
 				FA85ECD1234A5E7F00C6EBF4 /* LaunchScreen.storyboard */,
 			);
 			path = SoBoon;
-			sourceTree = "<group>";
-		};
-		FA85ECEC234B144800C6EBF4 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		FA863D942369808C007109E6 /* Notification */ = {
@@ -432,6 +428,8 @@
 		FAE0418B236BDD4500C14122 /* MyPage */ = {
 			isa = PBXGroup;
 			children = (
+				FAE04198236C601600C14122 /* MyPageProfileHeaderView.swift */,
+				FAE0419A236C602B00C14122 /* MyPageProfileHeaderView.xib */,
 				FAE0418C236BDDD700C14122 /* MyPageLikeHeaderView.swift */,
 				FAE0418D236BDDD700C14122 /* MyPageLikeHeaderView.xib */,
 			);
@@ -502,6 +500,7 @@
 				FA85ECD3234A5E7F00C6EBF4 /* LaunchScreen.storyboard in Resources */,
 				FAC8B19823686B2D0026C2C7 /* NotoSansCJKkr-Thin.otf in Resources */,
 				FA7EAFBA2355F3EF00757B11 /* FloatingTabbar.xib in Resources */,
+				FAE0419B236C602B00C14122 /* MyPageProfileHeaderView.xib in Resources */,
 				FAB6C6A723519AEB00572B74 /* Feed.storyboard in Resources */,
 				FAC8B19923686B2D0026C2C7 /* NotoSansCJKkr-Bold.otf in Resources */,
 				FAC8B19B23686B2D0026C2C7 /* NotoSansCJKkr-Light.otf in Resources */,
@@ -568,6 +567,7 @@
 				FA85ECC7234A5E7C00C6EBF4 /* AppDelegate.swift in Sources */,
 				FAE0418E236BDDD700C14122 /* MyPageLikeHeaderView.swift in Sources */,
 				FA051F19235C3A7D00A01418 /* FeedCategoryListCell.swift in Sources */,
+				FAE04199236C601600C14122 /* MyPageProfileHeaderView.swift in Sources */,
 				FA19B383236B40AA00A54CE7 /* MyPageLikeCell.swift in Sources */,
 				FAC8B19E23686F4B0026C2C7 /* UIFont+Custom.swift in Sources */,
 				FA051F1F235C3C7B00A01418 /* FeedCategoryCell.swift in Sources */,
