@@ -69,6 +69,8 @@
 		FAC8B19B23686B2D0026C2C7 /* NotoSansCJKkr-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = FAC8B19423686B2D0026C2C7 /* NotoSansCJKkr-Light.otf */; };
 		FAC8B19C23686B2D0026C2C7 /* NotoSansCJKkr-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FAC8B19523686B2D0026C2C7 /* NotoSansCJKkr-Regular.otf */; };
 		FAC8B19E23686F4B0026C2C7 /* UIFont+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC8B19D23686F4B0026C2C7 /* UIFont+Custom.swift */; };
+		FAD128E0236C8C33002D1AD4 /* MyPagePreferencesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD128DE236C8C33002D1AD4 /* MyPagePreferencesCell.swift */; };
+		FAD128E1236C8C33002D1AD4 /* MyPagePreferencesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAD128DF236C8C33002D1AD4 /* MyPagePreferencesCell.xib */; };
 		FAE0418E236BDDD700C14122 /* MyPageLikeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE0418C236BDDD700C14122 /* MyPageLikeHeaderView.swift */; };
 		FAE0418F236BDDD700C14122 /* MyPageLikeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAE0418D236BDDD700C14122 /* MyPageLikeHeaderView.xib */; };
 		FAE04199236C601600C14122 /* MyPageProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE04198236C601600C14122 /* MyPageProfileHeaderView.swift */; };
@@ -147,6 +149,8 @@
 		FAC8B19423686B2D0026C2C7 /* NotoSansCJKkr-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Light.otf"; sourceTree = "<group>"; };
 		FAC8B19523686B2D0026C2C7 /* NotoSansCJKkr-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Regular.otf"; sourceTree = "<group>"; };
 		FAC8B19D23686F4B0026C2C7 /* UIFont+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Custom.swift"; sourceTree = "<group>"; };
+		FAD128DE236C8C33002D1AD4 /* MyPagePreferencesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPagePreferencesCell.swift; sourceTree = "<group>"; };
+		FAD128DF236C8C33002D1AD4 /* MyPagePreferencesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPagePreferencesCell.xib; sourceTree = "<group>"; };
 		FAE0418C236BDDD700C14122 /* MyPageLikeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageLikeHeaderView.swift; sourceTree = "<group>"; };
 		FAE0418D236BDDD700C14122 /* MyPageLikeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPageLikeHeaderView.xib; sourceTree = "<group>"; };
 		FAE04198236C601600C14122 /* MyPageProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageProfileHeaderView.swift; sourceTree = "<group>"; };
@@ -302,6 +306,8 @@
 		FA863D9923699824007109E6 /* MyPage */ = {
 			isa = PBXGroup;
 			children = (
+				FAD128DE236C8C33002D1AD4 /* MyPagePreferencesCell.swift */,
+				FAD128DF236C8C33002D1AD4 /* MyPagePreferencesCell.xib */,
 				FA19B381236B40AA00A54CE7 /* MyPageLikeCell.swift */,
 				FA19B382236B40AA00A54CE7 /* MyPageLikeCell.xib */,
 			);
@@ -519,6 +525,7 @@
 				FAE0418F236BDDD700C14122 /* MyPageLikeHeaderView.xib in Resources */,
 				FA7EAFA32355F0EA00757B11 /* Splash.storyboard in Resources */,
 				FAE9BA8123635CB4008BE3E4 /* FeedDetailImageCell.xib in Resources */,
+				FAD128E1236C8C33002D1AD4 /* MyPagePreferencesCell.xib in Resources */,
 				FAC8B19623686B2D0026C2C7 /* NotoSansCJKkr-DemiLight.otf in Resources */,
 				FA7EAFA62355F15600757B11 /* Base.storyboard in Resources */,
 				FA896A6F2360BF9800ED6597 /* CommentCell.xib in Resources */,
@@ -549,6 +556,7 @@
 				FA7EAFA12355F0D800757B11 /* SplashViewController.swift in Sources */,
 				FA0A8C1C234C8AE300C469BC /* UIView+Extension.swift in Sources */,
 				FA19B386236B475200A54CE7 /* MyPageLikeViewController.swift in Sources */,
+				FAD128E0236C8C33002D1AD4 /* MyPagePreferencesCell.swift in Sources */,
 				FA85ECEE234B146300C6EBF4 /* NotificationViewController.swift in Sources */,
 				FAE9BA7B23634078008BE3E4 /* FeedDetailViewController.swift in Sources */,
 				FA051F15235C33AD00A01418 /* FeedListCell.swift in Sources */,
