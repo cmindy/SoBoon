@@ -69,6 +69,8 @@
 		FAC8B19B23686B2D0026C2C7 /* NotoSansCJKkr-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = FAC8B19423686B2D0026C2C7 /* NotoSansCJKkr-Light.otf */; };
 		FAC8B19C23686B2D0026C2C7 /* NotoSansCJKkr-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = FAC8B19523686B2D0026C2C7 /* NotoSansCJKkr-Regular.otf */; };
 		FAC8B19E23686F4B0026C2C7 /* UIFont+Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC8B19D23686F4B0026C2C7 /* UIFont+Custom.swift */; };
+		FAE0418E236BDDD700C14122 /* MyPageLikeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE0418C236BDDD700C14122 /* MyPageLikeHeaderView.swift */; };
+		FAE0418F236BDDD700C14122 /* MyPageLikeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAE0418D236BDDD700C14122 /* MyPageLikeHeaderView.xib */; };
 		FAE296AF23687AC800C720BD /* FeedDetailTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE296AD23687AC800C720BD /* FeedDetailTitleCell.swift */; };
 		FAE296B023687AC800C720BD /* FeedDetailTitleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAE296AE23687AC800C720BD /* FeedDetailTitleCell.xib */; };
 		FAE296B323687D9E00C720BD /* FeedDetailDescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE296B123687D9E00C720BD /* FeedDetailDescriptionCell.swift */; };
@@ -143,6 +145,8 @@
 		FAC8B19423686B2D0026C2C7 /* NotoSansCJKkr-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Light.otf"; sourceTree = "<group>"; };
 		FAC8B19523686B2D0026C2C7 /* NotoSansCJKkr-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansCJKkr-Regular.otf"; sourceTree = "<group>"; };
 		FAC8B19D23686F4B0026C2C7 /* UIFont+Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Custom.swift"; sourceTree = "<group>"; };
+		FAE0418C236BDDD700C14122 /* MyPageLikeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageLikeHeaderView.swift; sourceTree = "<group>"; };
+		FAE0418D236BDDD700C14122 /* MyPageLikeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPageLikeHeaderView.xib; sourceTree = "<group>"; };
 		FAE296AD23687AC800C720BD /* FeedDetailTitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailTitleCell.swift; sourceTree = "<group>"; };
 		FAE296AE23687AC800C720BD /* FeedDetailTitleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedDetailTitleCell.xib; sourceTree = "<group>"; };
 		FAE296B123687D9E00C720BD /* FeedDetailDescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDetailDescriptionCell.swift; sourceTree = "<group>"; };
@@ -336,6 +340,7 @@
 				FA7EAFAF2355F37300757B11 /* General */,
 				FA7EAFB12355F38600757B11 /* Tabbar */,
 				FA7EAFB22355F39400757B11 /* Feed */,
+				FAE0418B236BDD4500C14122 /* MyPage */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -424,6 +429,15 @@
 			path = Font;
 			sourceTree = "<group>";
 		};
+		FAE0418B236BDD4500C14122 /* MyPage */ = {
+			isa = PBXGroup;
+			children = (
+				FAE0418C236BDDD700C14122 /* MyPageLikeHeaderView.swift */,
+				FAE0418D236BDDD700C14122 /* MyPageLikeHeaderView.xib */,
+			);
+			path = MyPage;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -503,6 +517,7 @@
 				FA7EAFBE2355F6F600757B11 /* Notification.storyboard in Resources */,
 				FA051F16235C33AD00A01418 /* FeedListCell.xib in Resources */,
 				FA85ECD0234A5E7F00C6EBF4 /* Assets.xcassets in Resources */,
+				FAE0418F236BDDD700C14122 /* MyPageLikeHeaderView.xib in Resources */,
 				FA7EAFA32355F0EA00757B11 /* Splash.storyboard in Resources */,
 				FAE9BA8123635CB4008BE3E4 /* FeedDetailImageCell.xib in Resources */,
 				FAC8B19623686B2D0026C2C7 /* NotoSansCJKkr-DemiLight.otf in Resources */,
@@ -551,6 +566,7 @@
 				FA051F26235C430500A01418 /* FeedSearchView.swift in Sources */,
 				FA7EAFA92355F17100757B11 /* BaseTabBarViewController.swift in Sources */,
 				FA85ECC7234A5E7C00C6EBF4 /* AppDelegate.swift in Sources */,
+				FAE0418E236BDDD700C14122 /* MyPageLikeHeaderView.swift in Sources */,
 				FA051F19235C3A7D00A01418 /* FeedCategoryListCell.swift in Sources */,
 				FA19B383236B40AA00A54CE7 /* MyPageLikeCell.swift in Sources */,
 				FAC8B19E23686F4B0026C2C7 /* UIFont+Custom.swift in Sources */,

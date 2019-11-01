@@ -20,3 +20,5 @@ extension UITableViewCell: ReusableObjectType { }
 extension UICollectionViewCell: ReusableObjectType { }
 
 extension UITableViewHeaderFooterView: ReusableObjectType { }
+
+extension UICollectionReusableView: ReusableObjectType { }
