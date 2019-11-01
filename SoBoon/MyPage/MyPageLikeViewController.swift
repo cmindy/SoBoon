@@ -65,6 +65,9 @@ extension MyPageLikeViewController {
     }
     
     private func initCollectionView() {
+        let headerView = UINib(nibName: MyPageLikeHeaderView.reuseID, bundle: nil)
+        likeCollectionView.register(headerView, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: MyPageLikeHeaderView.reuseID)
+        
         let likeCell = UINib(nibName: MyPageLikeCell.reuseID, bundle: nil)
         likeCollectionView.register(likeCell, forCellWithReuseIdentifier: MyPageLikeCell.reuseID)
         
@@ -72,8 +75,7 @@ extension MyPageLikeViewController {
         likeCollectionView.delegate = self
         
         likeCollectionView.showsVerticalScrollIndicator = false
-        
-        likeFlowLayout.sectionInset = UIEdgeInsets(top: spacing, left: spacing, bottom: 0, right: spacing)
+        likeFlowLayout.sectionInset = UIEdgeInsets(top: 0, left: spacing, bottom: 0, right: spacing)
         likeFlowLayout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
         likeFlowLayout.minimumInteritemSpacing = 15.0
     }
@@ -92,10 +94,20 @@ extension MyPageLikeViewController: UICollectionViewDataSource {
         cell.configure(dummyList[indexPath.item])
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: MyPageLikeHeaderView.reuseID, for: indexPath) as! MyPageLikeHeaderView
+        return header
+    }
 }
 
 extension MyPageLikeViewController: UICollectionViewDelegate {
-    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        let indexPath = IndexPath(row: 0, section: section)
+        let headerView = self.collectionView(collectionView, viewForSupplementaryElementOfKind: UICollectionView.elementKindSectionHeader, at: indexPath)
+        return headerView.systemLayoutSizeFitting(CGSize(width: collectionView.frame.width,
+                                                         height: UIView.layoutFittingExpandedSize.height))
+    }
 }
 
 extension MyPageLikeViewController: UICollectionViewDelegateFlowLayout {
@@ -108,8 +120,6 @@ extension MyPageLikeViewController: UICollectionViewDelegateFlowLayout {
 //        return CGSize(width: width, height: width * 1.3)
 //    }
 }
-
-
 
 struct DummyLike {
     let imageName: String = "salad"
